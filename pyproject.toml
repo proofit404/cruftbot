@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "cruftbot"
+version = "0.1.0"
+description = "Apply cruft tool continuously in pull requests."
+authors = ["Artem Malyshev <proofit404@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.9"
+dependencies = "5.2.0"
+Django = "3.1.4"
+django-activity-stream = "0.9.0"  # @todo #2 Setup django-activity-stream package.
+django-allauth = "0.44.0"  # @todo #2 Setup django-allauth package.
+django-axes = "5.9.1"  # @todo #2 Setup django-axes package.
+django-cors-headers = "3.5.0"  # @todo #2 Setup django-cors-headers package.
+django-csp = "3.7"  # @todo #2 Setup django-csp package.
+django-environ = "0.4.5"  # @todo #2 Setup django-environ package.
+django-feature-policy = "3.5.0"  # @todo #2 Setup django-feature-policy package.
+django-filter = "2.4.0"  # @todo #2 Setup django-filter package.
+django-guardian = "2.3.0"  # @todo #2 Setup django-guardian package.
+django-health-check = "3.16.1"  # @todo #2 Setup django-health-check package.
+django-http-referrer-policy = "1.1.1"  # @todo #2 Setup django-http-referrer-policy package.
+django-model-utils = "4.1.1"  # @todo #2 Setup django-model-utils package.
+django-reversion = "3.0.8"  # @todo #2 Setup django-reversion package.
+django-silk = "4.1.0"  # @todo #2 Setup django-silk package.
+djangorestframework = "3.12.2"  # @todo #2 Setup djangorestframework package.
+drf-yasg = "1.20.0"  # @todo #2 Setup drf-yasg package.
+generics = "3.0.0"
+pydantic = "1.7.3"
+pydantic-initialized = "0.1.0"
+stories = "4.0.0"
+stories-pydantic = "0.1.0"
+
+[tool.poetry.dev-dependencies]
+django-debug-toolbar = "3.2"
+django-extensions = "3.1.0"  # @todo #2 Setup django-extensions package.
+django-extra-checks = "0.7.1"  # @todo #2 Setup django-extra-checks package.
+django-migration-linter = "2.4.0"  # @todo #2 Setup django-migration-linter package.
+django-querycount = "0.7.0"  # @todo #2 Setup django-querycount package.
+django-test-migrations = "1.0.0"  # @todo #2 Setup django-test-migrations package.
+stories-django = "0.1.0"

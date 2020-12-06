@@ -1,0 +1,1 @@
+from cruftbot.urls import *
