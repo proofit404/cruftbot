@@ -3,7 +3,12 @@ from debug_toolbar.settings import PANELS_DEFAULTS
 from cruftbot.settings import *
 
 
-DEVELOPMENT_APPS = ["django_extensions", "debug_toolbar", "stories_django"]
+DEVELOPMENT_APPS = [
+    "django_extensions",
+    "debug_toolbar",
+    "stories_django",
+    "django_test_migrations.contrib.django_checks.AutoNames",
+]
 
 INSTALLED_APPS.extend(DEVELOPMENT_APPS)
 
