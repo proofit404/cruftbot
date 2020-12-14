@@ -35,6 +35,6 @@ django-debug-toolbar = "3.2"
 django-extensions = "3.1.0"  # @todo #2 Setup django-extensions package.
 django-extra-checks = "0.7.1"  # @todo #2 Setup django-extra-checks package.
 django-migration-linter = "2.4.0"  # @todo #2 Setup django-migration-linter package.
-django-querycount = "0.7.0"  # @todo #2 Setup django-querycount package.
+django-querycount = "0.7.0"
 django-test-migrations = "1.0.0"  # @todo #2 Setup django-test-migrations package.
 stories-django = "0.1.0"

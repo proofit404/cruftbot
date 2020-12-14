@@ -7,7 +7,10 @@ DEVELOPMENT_APPS = ["django_extensions", "debug_toolbar", "stories_django"]
 
 INSTALLED_APPS.extend(DEVELOPMENT_APPS)
 
-DEVELOPMENT_MIDDLEWARE = ["debug_toolbar.middleware.DebugToolbarMiddleware"]
+DEVELOPMENT_MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "querycount.middleware.QueryCountMiddleware",
+]
 
 MIDDLEWARE.extend(DEVELOPMENT_MIDDLEWARE)
 
