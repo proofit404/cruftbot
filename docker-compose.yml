@@ -1,2 +1,15 @@
-# @todo #8 Run dockerized application.
+version: "3.8"
+services:
+  app:
+    build: .
+    image: cruftbot_app
+    command: poetry run django-admin runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=cruftbot.settings.development
+      - PYTHONPATH=/app/
+      - PYTHONUNBUFFERED=1
 # @todo #8 Run dockerized database.
