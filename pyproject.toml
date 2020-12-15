@@ -25,6 +25,7 @@ django-silk = "4.1.0"  # @todo #2 Setup django-silk package.
 djangorestframework = "3.12.2"  # @todo #2 Setup djangorestframework package.
 drf-yasg = "1.20.0"  # @todo #2 Setup drf-yasg package.
 generics = "3.0.0"
+psycopg2-binary = "2.8.6"
 pydantic = "1.7.3"
 pydantic-initialized = "0.1.0"
 stories = "4.0.0"

@@ -4,6 +4,8 @@ services:
     build: .
     image: cruftbot_app
     command: poetry run django-admin runserver 0.0.0.0:8000
+    depends_on:
+      - db
     volumes:
       - .:/app
     ports:
@@ -12,4 +14,13 @@ services:
       - DJANGO_SETTINGS_MODULE=cruftbot.settings.development
       - PYTHONPATH=/app/
       - PYTHONUNBUFFERED=1
-# @todo #8 Run dockerized database.
+  db:
+    image: postgres
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: cruftbot
+      POSTGRES_USER: cruftbot
+      POSTGRES_PASSWORD: cruftbot
+volumes:
+  db:
