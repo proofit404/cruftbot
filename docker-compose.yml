@@ -3,7 +3,7 @@ services:
   app:
     build: .
     image: cruftbot_app
-    command: poetry run django-admin runserver 0.0.0.0:8000
+    command: ./scripts/serve
     depends_on:
       - db
     volumes:

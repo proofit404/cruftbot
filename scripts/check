@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# @todo #44 Setup pre-commit.
+# @todo #44 Setup pyupgrade.
+# @todo #44 Setup reorder-python-imports.
+# @todo #44 Setup docformatter.
+# @todo #44 Setup black.
+# @todo #44 Setup flake8.
+# @todo #44 Setup bandit.
