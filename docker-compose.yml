@@ -8,6 +8,7 @@ services:
       - db
     volumes:
       - .:/app
+      - precommit:/root/.cache/pre-commit
     ports:
       - "8000:8000"
     environment:
@@ -23,4 +24,5 @@ services:
       POSTGRES_USER: cruftbot
       POSTGRES_PASSWORD: cruftbot
 volumes:
+  precommit:
   db:

@@ -7,7 +7,9 @@ set -o pipefail
 echo "==> Running pre-commit…"
 poetry run pre-commit run --all-files --show-diff-on-failure
 
-# @todo #44 Setup pyupgrade.
+echo "==> Running pyupgrade…"
+git ls-files '*.py' | xargs poetry run pyupgrade --py38-plus
+
 # @todo #44 Setup reorder-python-imports.
 # @todo #44 Setup docformatter.
 
