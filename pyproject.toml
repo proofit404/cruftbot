@@ -40,4 +40,5 @@ django-migration-linter = "2.4.0"  # @todo #2 Setup django-migration-linter pack
 django-querycount = "0.7.0"
 django-test-migrations = "1.0.0"
 ipython = "7.19.0"
+pre-commit = "2.9.3"
 stories-django = "0.1.0"

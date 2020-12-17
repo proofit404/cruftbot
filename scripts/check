@@ -4,7 +4,9 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-# @todo #44 Setup pre-commit.
+echo "==> Running pre-commit…"
+poetry run pre-commit run --all-files --show-diff-on-failure
+
 # @todo #44 Setup pyupgrade.
 # @todo #44 Setup reorder-python-imports.
 # @todo #44 Setup docformatter.
