@@ -8,6 +8,9 @@ set -o pipefail
 # @todo #44 Setup pyupgrade.
 # @todo #44 Setup reorder-python-imports.
 # @todo #44 Setup docformatter.
-# @todo #44 Setup black.
+
+echo "==> Running black…"
+poetry run black --check --quiet .
+
 # @todo #44 Setup flake8.
 # @todo #44 Setup bandit.

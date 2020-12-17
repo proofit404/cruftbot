@@ -32,6 +32,7 @@ stories = "4.0.0"
 stories-pydantic = "0.1.0"
 
 [tool.poetry.dev-dependencies]
+black = "20.8b1"
 django-debug-toolbar = "3.2"
 django-extensions = "3.1.0"
 django-extra-checks = "0.7.1"  # @todo #2 Setup django-extra-checks package.
