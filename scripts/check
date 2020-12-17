@@ -10,7 +10,9 @@ poetry run pre-commit run --all-files --show-diff-on-failure
 echo "==> Running pyupgrade…"
 git ls-files '*.py' | xargs poetry run pyupgrade --py38-plus
 
-# @todo #44 Setup reorder-python-imports.
+echo "==> Running reorder-python-imports…"
+git ls-files '*.py' | xargs poetry run reorder-python-imports
+
 # @todo #44 Setup docformatter.
 
 echo "==> Running black…"
