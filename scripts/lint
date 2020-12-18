@@ -4,4 +4,17 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-# @todo #44 Complete script applying pretty printers to code.
+echo "==> Running pre-commit…"
+poetry run pre-commit run --all-files --show-diff-on-failure
+
+echo "==> Running pyupgrade…"
+git ls-files '*.py' | xargs poetry run pyupgrade --exit-zero-even-if-changed --py38-plus
+
+echo "==> Running reorder-python-imports…"
+git ls-files '*.py' | xargs poetry run reorder-python-imports --exit-zero-even-if-changed --py38-plus
+
+echo "==> Running docformatter…"
+git ls-files '*.py' | xargs poetry run docformatter --in-place --wrap-summaries 88 --wrap-descriptions 88 --blank
+
+echo "==> Running black…"
+poetry run black --quiet .

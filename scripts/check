@@ -11,7 +11,7 @@ echo "==> Running pyupgrade…"
 git ls-files '*.py' | xargs poetry run pyupgrade --py38-plus
 
 echo "==> Running reorder-python-imports…"
-git ls-files '*.py' | xargs poetry run reorder-python-imports
+git ls-files '*.py' | xargs poetry run reorder-python-imports --py38-plus
 
 echo "==> Running docformatter…"
 git ls-files '*.py' | xargs poetry run docformatter --check --wrap-summaries 88 --wrap-descriptions 88 --blank
