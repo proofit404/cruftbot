@@ -32,6 +32,7 @@ stories = "4.0.0"
 stories-pydantic = "0.1.0"
 
 [tool.poetry.dev-dependencies]
+bandit = "1.7.0"
 black = "20.8b1"
 django-debug-toolbar = "3.2"
 django-extensions = "3.1.0"

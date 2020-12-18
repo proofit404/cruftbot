@@ -22,4 +22,5 @@ poetry run black --check --quiet .
 echo "==> Running flake8…"
 poetry run flake8 .
 
-# @todo #44 Setup bandit.
+echo "==> Running bandit…"
+poetry run bandit -r cruftbot/
