@@ -19,5 +19,7 @@ git ls-files '*.py' | xargs poetry run docformatter --check --wrap-summaries 88 
 echo "==> Running black…"
 poetry run black --check --quiet .
 
-# @todo #44 Setup flake8.
+echo "==> Running flake8…"
+poetry run flake8 .
+
 # @todo #44 Setup bandit.
