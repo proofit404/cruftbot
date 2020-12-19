@@ -8,6 +8,7 @@ DEVELOPMENT_APPS = [
     "debug_toolbar",
     "stories_django",
     "django_test_migrations.contrib.django_checks.AutoNames",
+    "django_migration_linter",
 ]
 
 INSTALLED_APPS.extend(DEVELOPMENT_APPS)

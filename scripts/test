@@ -7,6 +7,9 @@ set -o pipefail
 echo "==> Running check framework…"
 poetry run django-admin check --deploy --fail-level WARNING
 
+echo "==> Running migration linter…"
+poetry run django-admin lintmigrations
+
 echo "==> Running tests…"
 poetry run coverage run -m django test
 
