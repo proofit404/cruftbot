@@ -4,7 +4,5 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-# @todo #44 Complete installation script. Copy this script inside
-#  docker container. Run this script as single installation step
-#  in this docker container. This script will be also a single
-#  installation step on continuous integration service.
+echo "==> Installing dependencies…"
+poetry install

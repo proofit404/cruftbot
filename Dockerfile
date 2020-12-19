@@ -7,7 +7,3 @@ RUN ln -s $HOME/.poetry/bin/poetry /usr/local/bin/poetry
 RUN mkdir /app/
 
 WORKDIR /app/
-
-COPY pyproject.toml poetry.lock /app/
-
-RUN poetry install
