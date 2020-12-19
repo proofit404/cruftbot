@@ -9,6 +9,7 @@ DEVELOPMENT_APPS = [
     "stories_django",
     "django_test_migrations.contrib.django_checks.AutoNames",
     "django_migration_linter",
+    "extra_checks",
 ]
 
 INSTALLED_APPS.extend(DEVELOPMENT_APPS)
@@ -31,3 +32,17 @@ DEBUG_TOOLBAR_PANELS = PANELS_DEFAULTS + DEVELOPMENT_PANELS
 SHELL_PLUS = "ipython"
 
 SHELL_PLUS_PRINT_SQL = True
+
+EXTRA_CHECKS = {
+    "checks": [
+        "no-unique-together",
+        "no-index-together",
+        "field-file-upload-to",
+        "field-text-null",
+        "field-boolean-null",
+        "field-null",
+        {"id": "field-foreign-key-db-index", "when": "indexes"},
+        "field-default-null",
+        "field-choices-constraint",
+    ]
+}
