@@ -4,6 +4,11 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+echo "==> Running check framework…"
 poetry run django-admin check --deploy --fail-level WARNING
-poetry run django-admin test
-# @todo #44 Setup coverage.
+
+echo "==> Running tests…"
+poetry run coverage run -m django test
+
+echo "==> Running coverage report…"
+poetry run coverage report --fail-under 100
