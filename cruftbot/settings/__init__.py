@@ -14,6 +14,8 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
+    "actstream",
     "cruftbot.apps.CruftbotConfig",
 ]
 
@@ -44,6 +46,8 @@ TEMPLATES = [
 ROOT_URLCONF = "cruftbot.urls.production"
 
 WSGI_APPLICATION = "cruftbot.wsgi.application"
+
+SITE_ID = 1
 
 DATABASES = {
     "default": {

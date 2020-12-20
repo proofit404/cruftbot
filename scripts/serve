@@ -4,4 +4,8 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+echo "==> Updating db…"
+poetry run django-admin migrate
+
+echo "==> Running server…"
 poetry run django-admin runserver 0.0.0.0:8000

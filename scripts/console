@@ -4,4 +4,8 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+echo "==> Updating db…"
+poetry run django-admin migrate
+
+echo "==> Running console…"
 poetry run django-admin shell_plus
