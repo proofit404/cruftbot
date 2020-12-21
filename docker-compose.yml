@@ -11,6 +11,7 @@ services:
       - user:/root/.cache
     ports:
       - "8000:8000"
+      - "9000:9000"
     environment:
       - DJANGO_SETTINGS_MODULE=cruftbot.settings.development
       - PYTHONPATH=/app/

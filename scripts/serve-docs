@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+echo "==> Running documentation server…"
+poetry run mkdocs serve --dev-addr 0.0.0.0:9000
