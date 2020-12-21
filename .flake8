@@ -1,0 +1,9 @@
+[flake8]
+max-line-length = 88
+eradicate-aggressive = True
+ban-relative-imports = True
+per-file-ignores =
+  # These modules are interfaces.  They contains public classes and
+  # functions avalable from the outside.  No code is allowed to be
+  # imported from the nested modules.
+  */__init__.py: F401
