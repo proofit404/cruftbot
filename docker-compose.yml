@@ -16,6 +16,10 @@ services:
       - DJANGO_SETTINGS_MODULE=cruftbot.settings.development
       - PYTHONPATH=/app/
       - PYTHONUNBUFFERED=1
+      - CRUFTBOT_SECRET_KEY=qo!-i61otd!-z7f)erygb4!*8%zt7z10xh=n=^n64&46t_vgf)
+      - CRUFTBOT_DEBUG=True
+      - CRUFTBOT_SITE_ID=1
+      - CRUFTBOT_DATABASE_URL=psql://cruftbot:cruftbot@db:5432/cruftbot
   db:
     image: postgres
     volumes:
