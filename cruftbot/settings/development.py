@@ -46,3 +46,5 @@ EXTRA_CHECKS = {
         "field-choices-constraint",
     ]
 }
+
+DTM_IGNORED_MIGRATIONS = {("axes", "*")}
