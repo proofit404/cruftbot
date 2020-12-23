@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "actstream",
     "axes",
+    "rest_framework",
     "cruftbot.apps.CruftbotConfig",
 ]
 
