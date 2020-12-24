@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     "actstream",
     "axes",
     "rest_framework",
+    "drf_yasg",
     "cruftbot.apps.CruftbotConfig",
 ]
 
