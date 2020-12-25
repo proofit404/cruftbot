@@ -23,6 +23,11 @@ INSTALLED_APPS = [
     "axes",
     "rest_framework",
     "drf_yasg",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.github",
+    "allauth.socialaccount.providers.gitlab",
     "cruftbot.apps.CruftbotConfig",
 ]
 
@@ -71,7 +76,10 @@ AUTH_PASSWORD_VALIDATORS = [
 AUTHENTICATION_BACKENDS = [
     "axes.backends.AxesBackend",
     "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
 ]
+
+SOCIALACCOUNT_PROVIDERS = {}
 
 LANGUAGE_CODE = "en-us"
 
