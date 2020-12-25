@@ -48,3 +48,7 @@ EXTRA_CHECKS = {
 }
 
 DTM_IGNORED_MIGRATIONS = {("axes", "*")}
+
+DEVELOPMENT_ORIGINS = ["http://localhost:8000", "http://0.0.0.0:8000"]
+
+CORS_ALLOWED_ORIGINS.extend(DEVELOPMENT_ORIGINS)
