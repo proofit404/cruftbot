@@ -6,3 +6,5 @@ set -o pipefail
 
 echo "==> Installing dependencies…"
 poetry install
+
+# @todo #46 Install ruby packages with bundler.

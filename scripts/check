@@ -24,3 +24,5 @@ poetry run flake8 .
 
 echo "==> Running bandit…"
 poetry run bandit -r cruftbot/
+
+# @todo #46 Run pdd locally.
