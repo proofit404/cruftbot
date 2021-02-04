@@ -272,14 +272,14 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "django-activity-stream"
-version = "0.9.0"
+version = "0.10.0"
 description = "Generate generic activity streams from the actions on your site. Users can follow any actors' activities for personalized streams."
 category = "main"
 optional = false
 python-versions = "*"
 
 [package.extras]
-jsonfield = ["django-jsonfield (>=1.0.1)", "django-jsonfield-compat (>=0.4.4)"]
+jsonfield = ["django-jsonfield-backport (>=1.0.2,<2.0)"]
 
 [[package]]
 name = "django-allauth"
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "05bc7627091c00c332deab38d1fae0df6673b3d9844511c8f5ab4cb9085f6591"
+content-hash = "c0302b6ab6d3b076bd73aa5b185f9c4395e72e749d18c9c193782ee9bb194a94"
 
 [metadata.files]
 appdirs = [
@@ -1693,8 +1693,8 @@ django = [
     {file = "Django-3.1.4.tar.gz", hash = "sha256:edb10b5c45e7e9c0fb1dc00b76ec7449aca258a39ffd613dbd078c51d19c9f03"},
 ]
 django-activity-stream = [
-    {file = "django-activity-stream-0.9.0.tar.gz", hash = "sha256:9d63c83147867d9a3da7cf02389fda16b2694236b90b43489b42e6e6f2aaacc5"},
-    {file = "django_activity_stream-0.9.0-py3-none-any.whl", hash = "sha256:a381511d82168ab912b2fbecdbc49c98cd187cda39385f8dff5080914c1a9c50"},
+    {file = "django-activity-stream-0.10.0.tar.gz", hash = "sha256:2cec600bb5a543dd402747afeeec237e9848993385049adfedc16ec97a6d86f2"},
+    {file = "django_activity_stream-0.10.0-py3-none-any.whl", hash = "sha256:77729f56424292f208c7bb086607e840c59a584cf02b9daa4773f335c8fec0f6"},
 ]
 django-allauth = [
     {file = "django-allauth-0.44.0.tar.gz", hash = "sha256:e51af457466022f52154d74c8523ac69375120fad2acce6e239635d85e610b25"},
