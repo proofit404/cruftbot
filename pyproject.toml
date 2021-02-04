@@ -29,7 +29,7 @@ psycopg2-binary = "2.8.6"
 pydantic = "1.7.3"
 pydantic-initialized = "0.1.0"
 stories = "4.0.0"
-stories-pydantic = "0.1.0"
+stories-pydantic = "0.5.0"
 
 [tool.poetry.dev-dependencies]
 bandit = "1.7.0"

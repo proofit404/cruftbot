@@ -1368,11 +1368,11 @@ python-versions = ">=3.9,<4.0"
 
 [[package]]
 name = "stories-pydantic"
-version = "0.1.0"
+version = "0.5.0"
 description = "Use pydantic models as stories context contract."
 category = "main"
 optional = false
-python-versions = ">=3.9,<4.0"
+python-versions = ">=3.6,<3.10"
 
 [[package]]
 name = "tokenize-rt"
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "9eda6a0d31bd480803d1eac907a179b66ec31b386d9aad8bc03b9730db90bdb6"
+content-hash = "14f71b4fd35780d4d0b1c68c20598ce58072783910207aba07acf5d05674edbd"
 
 [metadata.files]
 appdirs = [
@@ -2233,8 +2233,8 @@ stories-django = [
     {file = "stories_django-0.1.0-py3-none-any.whl", hash = "sha256:f4c3091a198c5d369bf3b98a9b7a2a53a933a733a9a68434b1f423e3ac34464d"},
 ]
 stories-pydantic = [
-    {file = "stories-pydantic-0.1.0.tar.gz", hash = "sha256:df76890b6e2a095f53d8d383e230e5ef966fad53fcbaa2e6d0e3945d2d1df027"},
-    {file = "stories_pydantic-0.1.0-py3-none-any.whl", hash = "sha256:15472472bfc4cacef6056d5499c63ca174a1bf789e40373445d3b39bc27ff4a3"},
+    {file = "stories-pydantic-0.5.0.tar.gz", hash = "sha256:3a1e9c06e27d72c7abfdb9185d0d639e7e877bb2dbb39f9c8d1c17056b84caa9"},
+    {file = "stories_pydantic-0.5.0-py3-none-any.whl", hash = "sha256:d8cd15427fcd415555c404dcb9bc35f863496c54a11b5491237d0a827ec82890"},
 ]
 tokenize-rt = [
     {file = "tokenize_rt-4.0.0-py2.py3-none-any.whl", hash = "sha256:c47d3bd00857c24edefccdd6dc99c19d4ceed77c5971a3e2fac007fb0c02e39d"},
