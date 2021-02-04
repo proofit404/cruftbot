@@ -525,7 +525,7 @@ django = ">=2.2"
 
 [[package]]
 name = "docformatter"
-version = "1.3.1"
+version = "1.4"
 description = "Formats docstrings to follow PEP 257."
 category = "dev"
 optional = false
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "3b4610f58f9815f74a0de9d3dccaac8852f7e6c251db4aa00b1db4bf5b1e4167"
+content-hash = "05bc7627091c00c332deab38d1fae0df6673b3d9844511c8f5ab4cb9085f6591"
 
 [metadata.files]
 appdirs = [
@@ -1777,7 +1777,7 @@ djangorestframework = [
     {file = "djangorestframework-3.12.2.tar.gz", hash = "sha256:0898182b4737a7b584a2c73735d89816343369f259fea932d90dc78e35d8ac33"},
 ]
 docformatter = [
-    {file = "docformatter-1.3.1.tar.gz", hash = "sha256:d8db663665becccac75737b2635a06076f2c832bf861322a7bfc512f0a9fa7e3"},
+    {file = "docformatter-1.4.tar.gz", hash = "sha256:064e6d81f04ac96bc0d176cbaae953a0332482b22d3ad70d47c8a7f2732eef6f"},
 ]
 drf-yasg = [
     {file = "drf-yasg-1.20.0.tar.gz", hash = "sha256:d50f197c7f02545d0b736df88c6d5cf874f8fea2507ad85ad7de6ae5bf2d9e5a"},
