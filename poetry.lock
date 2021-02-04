@@ -473,7 +473,7 @@ python-versions = "*"
 
 [[package]]
 name = "django-reversion"
-version = "3.0.8"
+version = "3.0.9"
 description = "An extension to the Django web framework that provides version control for model instances."
 category = "main"
 optional = false
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "14f71b4fd35780d4d0b1c68c20598ce58072783910207aba07acf5d05674edbd"
+content-hash = "a87ad43199415301343e1397115cb01d47e062e40d53fbf4b9b6ace0d9d397b5"
 
 [metadata.files]
 appdirs = [
@@ -1762,8 +1762,8 @@ django-querycount = [
     {file = "django-querycount-0.7.0.tar.gz", hash = "sha256:8f5123d78716ff0704f2373e746a7200b8d8417798ce4a99bf2de87e3768f9ce"},
 ]
 django-reversion = [
-    {file = "django-reversion-3.0.8.tar.gz", hash = "sha256:49e9930f90322dc6a2754dd26144285cfcc1c5bd0c1c39ca95d5602c5054ae32"},
-    {file = "django_reversion-3.0.8-py3-none-any.whl", hash = "sha256:9cfadeec2df37cb53d795ab79f6792f9eed8e70363dcf3a275dc19a58b971a8f"},
+    {file = "django-reversion-3.0.9.tar.gz", hash = "sha256:a5af55f086a3f9c38be2f049c251e06005b9ed48ba7a109473736b1fc95a066f"},
+    {file = "django_reversion-3.0.9-py3-none-any.whl", hash = "sha256:1b57127a136b969f4b843a915c72af271febe7f336469db6c27121f8adcad35c"},
 ]
 django-silk = [
     {file = "django_silk-4.1.0-py2.py3-none-any.whl", hash = "sha256:a331e55618fa62eaf3cf5a63f31bc1e91205efbeeca5e587c577498b0e251ed8"},
