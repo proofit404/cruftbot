@@ -438,7 +438,7 @@ python-versions = "*"
 
 [[package]]
 name = "django-migration-linter"
-version = "2.4.0"
+version = "2.5.1"
 description = "Detect backward incompatible migrations for your django project"
 category = "dev"
 optional = false
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "c0302b6ab6d3b076bd73aa5b185f9c4395e72e749d18c9c193782ee9bb194a94"
+content-hash = "d5dd2579f4a8316ba95874e13870c24ae3abda02468bbc295ba339ffc5a9c424"
 
 [metadata.files]
 appdirs = [
@@ -1751,8 +1751,8 @@ django-ipware = [
     {file = "django-ipware-3.0.2.tar.gz", hash = "sha256:c7df8e1410a8e5d6b1fbae58728402ea59950f043c3582e033e866f0f0cf5e94"},
 ]
 django-migration-linter = [
-    {file = "django-migration-linter-2.4.0.tar.gz", hash = "sha256:445c17d87c1245f018b4855bef31232f3a4e0e707e473cc1c1947402c3ea2b6e"},
-    {file = "django_migration_linter-2.4.0-py2.py3-none-any.whl", hash = "sha256:40f3db9e6f1e88047f6baaa801dc4daccccb370bab1102e51a82b41b2e349956"},
+    {file = "django-migration-linter-2.5.1.tar.gz", hash = "sha256:32f552b09e122c278acbef84d92c2f01ecf03dfa0c72b4918762b7e39f598691"},
+    {file = "django_migration_linter-2.5.1-py2.py3-none-any.whl", hash = "sha256:e4209e74393ddb86f31e8b7a13555fcecd1def506a04e1fe16b470248661dec7"},
 ]
 django-model-utils = [
     {file = "django-model-utils-4.1.1.tar.gz", hash = "sha256:eb5dd05ef7d7ce6bc79cae54ea7c4a221f6f81e2aad7722933aee66489e7264b"},
