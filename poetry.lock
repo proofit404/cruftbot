@@ -1151,11 +1151,11 @@ typing_extensions = ["typing-extensions (>=3.7.2)"]
 
 [[package]]
 name = "pydantic-initialized"
-version = "0.1.0"
+version = "0.4.0"
 description = "Pydantic model __init__ method with proper signature."
 category = "main"
 optional = false
-python-versions = ">=3.9,<4.0"
+python-versions = ">=3.6,<3.10"
 
 [[package]]
 name = "pyflakes"
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "af15b1c316d35e0fcbe109b482cc16e46216f6194b89a1bc47f7b4963bd09c7c"
+content-hash = "ce8f7534fc855195e54680b4d59b2cffd7f1ea841700abbce41d098a3805a136"
 
 [metadata.files]
 appdirs = [
@@ -2098,8 +2098,8 @@ pydantic = [
     {file = "pydantic-1.7.3.tar.gz", hash = "sha256:213125b7e9e64713d16d988d10997dabc6a1f73f3991e1ff8e35ebb1409c7dc9"},
 ]
 pydantic-initialized = [
-    {file = "pydantic-initialized-0.1.0.tar.gz", hash = "sha256:b8fc0ccbd5b64a63cf1deedb990b0b9eccf215e51d0c70c28893dc853b0c8497"},
-    {file = "pydantic_initialized-0.1.0-py3-none-any.whl", hash = "sha256:3b91b728ba53fac236932f5424bb2d26baa06acfcfb10b93851fd2e724456cc8"},
+    {file = "pydantic-initialized-0.4.0.tar.gz", hash = "sha256:ec99786cab2ab99854aaee0bf66ec24ef64b5fb98ee74d488a0d1a04de9705e8"},
+    {file = "pydantic_initialized-0.4.0-py3-none-any.whl", hash = "sha256:1cb1b87629841fffabfafb546c284f5ea8ebbb880baf0e2b237d18e5561cb250"},
 ]
 pyflakes = [
     {file = "pyflakes-2.2.0-py2.py3-none-any.whl", hash = "sha256:0d94e0e05a19e57a99444b6ddcf9a6eb2e5c68d3ca1e98e90707af8152c90a92"},
