@@ -597,7 +597,7 @@ flake8 = ">=3.7"
 
 [[package]]
 name = "flake8-blind-except"
-version = "0.1.1"
+version = "0.2.0"
 description = "A flake8 extension that checks for blind except: statements"
 category = "dev"
 optional = false
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "4fbcfa2cca29435fae8fbd948c77c2fed4e91b65005c2ba946ceb61783b0ab5a"
+content-hash = "cbe56578d2745f2b26cceff6dc2ee8404d3c0e0693a53361b5b8f955cf66cae4"
 
 [metadata.files]
 appdirs = [
@@ -1799,8 +1799,7 @@ flake8-2020 = [
     {file = "flake8_2020-1.6.0.tar.gz", hash = "sha256:3e438d9d531577fbb9332bbd0bf394eca890f3b7a5311e2278fb3582381a2f13"},
 ]
 flake8-blind-except = [
-    {file = "flake8-blind-except-0.1.1.tar.gz", hash = "sha256:aca3356633825544cec51997260fe31a8f24a1a2795ce8e81696b9916745e599"},
-    {file = "flake8_blind_except-0.1.1-py2.7.egg", hash = "sha256:0d7d1adb4cabf2268d6eebb815a7a5014bcb7e8419f7a74339c46d0b8847b858"},
+    {file = "flake8-blind-except-0.2.0.tar.gz", hash = "sha256:02a860a1a19cb602c006a3fe0778035b0d14d3f57929b4b798bc7d6684f204e5"},
 ]
 flake8-bugbear = [
     {file = "flake8-bugbear-20.11.1.tar.gz", hash = "sha256:528020129fea2dea33a466b9d64ab650aa3e5f9ffc788b70ea4bc6cf18283538"},
