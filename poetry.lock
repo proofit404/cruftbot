@@ -255,7 +255,7 @@ python-versions = "*"
 
 [[package]]
 name = "django"
-version = "3.1.6"
+version = "3.1.7"
 description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
 category = "main"
 optional = false
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "9e4f5894b9d649a96649c32ddeea3d3a34c1119bc87ec7aea5a099b04dd91087"
+content-hash = "43547ab2e5394cdc8fad11ce932515c713a7949ee3c63b25accadcfc0c6e3043"
 
 [metadata.files]
 appdirs = [
@@ -1689,8 +1689,8 @@ distlib = [
     {file = "distlib-0.3.1.zip", hash = "sha256:edf6116872c863e1aa9d5bb7cb5e05a022c519a4594dc703843343a9ddd9bff1"},
 ]
 django = [
-    {file = "Django-3.1.6-py3-none-any.whl", hash = "sha256:169e2e7b4839a7910b393eec127fd7cbae62e80fa55f89c6510426abf673fe5f"},
-    {file = "Django-3.1.6.tar.gz", hash = "sha256:c6c0462b8b361f8691171af1fb87eceb4442da28477e12200c40420176206ba7"},
+    {file = "Django-3.1.7-py3-none-any.whl", hash = "sha256:baf099db36ad31f970775d0be5587cc58a6256a6771a44eb795b554d45f211b8"},
+    {file = "Django-3.1.7.tar.gz", hash = "sha256:32ce792ee9b6a0cbbec340123e229ac9f765dff8c2a4ae9247a14b2ba3a365a7"},
 ]
 django-activity-stream = [
     {file = "django-activity-stream-0.10.0.tar.gz", hash = "sha256:2cec600bb5a543dd402747afeeec237e9848993385049adfedc16ec97a6d86f2"},
