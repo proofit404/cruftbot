@@ -298,7 +298,7 @@ requests-oauthlib = ">=0.3.0"
 
 [[package]]
 name = "django-axes"
-version = "5.13.0"
+version = "5.13.1"
 description = "Keep track of failed login attempts in Django-powered sites."
 category = "main"
 optional = false
@@ -1497,7 +1497,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "df53b10e1e8bc8c58bf7cd4e210a10f3a9b2b89c0f2e36b0ed1591598abab80b"
+content-hash = "8724a52bcd32deff19f260dc0b11fea0b5ef940af2b600854cdad77b97afe24d"
 
 [metadata.files]
 appdirs = [
@@ -1700,8 +1700,8 @@ django-allauth = [
     {file = "django-allauth-0.44.0.tar.gz", hash = "sha256:e51af457466022f52154d74c8523ac69375120fad2acce6e239635d85e610b25"},
 ]
 django-axes = [
-    {file = "django-axes-5.13.0.tar.gz", hash = "sha256:96469de7b10d1152e8bee92edd6325f27ff64b13f58f1d875f7de9ad5c502491"},
-    {file = "django_axes-5.13.0-py3-none-any.whl", hash = "sha256:8ba9fa14156eb18cbca78b6879b0d7b6e4318321176561528e8c633dfd57ff58"},
+    {file = "django-axes-5.13.1.tar.gz", hash = "sha256:8f7870dc18ace6155127073bffe7276719c71c5ad4e67b45abedc0207f64a2f6"},
+    {file = "django_axes-5.13.1-py3-none-any.whl", hash = "sha256:aef814f738742b01cc7730cd2bebe3e5b462b807fd6c2ed609b62437ccc71f80"},
 ]
 django-cors-headers = [
     {file = "django-cors-headers-3.7.0.tar.gz", hash = "sha256:96069c4aaacace786a34ee7894ff680780ec2644e4268b31181044410fecd12e"},
