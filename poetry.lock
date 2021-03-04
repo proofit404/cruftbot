@@ -408,7 +408,7 @@ Django = ">=2.2"
 
 [[package]]
 name = "django-health-check"
-version = "3.16.2"
+version = "3.16.3"
 description = "Run checks on services like databases, queue servers, celery processes, etc."
 category = "main"
 optional = false
@@ -1499,7 +1499,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "e7b4bb6c6dacb335a617599c6108b76ffee9f9b7c73861f3913fb1e0f48b7439"
+content-hash = "b6b0c377f0a04ac30086fde7978656bb80f8e6033e44f24b25e20e1cc3bbd2cd"
 
 [metadata.files]
 appdirs = [
@@ -1742,8 +1742,8 @@ django-guardian = [
     {file = "django_guardian-2.3.0-py3-none-any.whl", hash = "sha256:0e70706c6cda88ddaf8849bddb525b8df49de05ba0798d4b3506049f0d95cbc8"},
 ]
 django-health-check = [
-    {file = "django-health-check-3.16.2.tar.gz", hash = "sha256:d5edf773b59e4091ac6bd65280091dbb13d92e70eba5cf8573faa738a9cb481c"},
-    {file = "django_health_check-3.16.2-py2.py3-none-any.whl", hash = "sha256:aec4dd5cfb8333071f535c3611ef805ec2012af9568cf984be351ff1bd4020be"},
+    {file = "django-health-check-3.16.3.tar.gz", hash = "sha256:a6aa6ea423eae4fd0665f6372b826af1ed20dfc3e88cf52789d0b49cfb64969c"},
+    {file = "django_health_check-3.16.3-py2.py3-none-any.whl", hash = "sha256:d0628ffc11aee7e62e73b58ff39179ea2a9ca5abfbc92cb345ceca268593dd71"},
 ]
 django-http-referrer-policy = [
     {file = "django-http-referrer-policy-1.1.1.tar.gz", hash = "sha256:917f5ed62054b27eff3172b7eccfb018469e85ddd538767328553282a70493c3"},
