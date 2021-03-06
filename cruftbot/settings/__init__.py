@@ -46,16 +46,10 @@ MIDDLEWARE = [
 
 TEMPLATES = [
     {
-        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "BACKEND": "django.template.backends.jinja2.Jinja2",
         "DIRS": [],
         "APP_DIRS": True,
-        "OPTIONS": {
-            "context_processors": [
-                "django.template.context_processors.debug",
-                "django.template.context_processors.request",
-                "django.contrib.auth.context_processors.auth",
-            ],
-        },
+        "OPTIONS": {"environment": "jinja2.sandbox.SandboxedEnvironment"},
     },
 ]
 

@@ -25,6 +25,7 @@ django-silk = "4.1.0"  # @todo #2 Setup django-silk package.
 djangorestframework = "3.12.2"
 drf-yasg = "1.20.0"
 generics = "3.3.0"
+Jinja2 = "2.11.3"
 psycopg2-binary = "2.8.6"
 pydantic = "1.8.1"
 pydantic-initialized = "0.4.0"
