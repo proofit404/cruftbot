@@ -3,6 +3,10 @@ from debug_toolbar.settings import PANELS_DEFAULTS
 from cruftbot.settings import *
 
 
+def show_toolbar(request):
+    return True
+
+
 DEVELOPMENT_APPS = [
     "django_extensions",
     "debug_toolbar",
@@ -23,11 +27,13 @@ MIDDLEWARE.extend(DEVELOPMENT_MIDDLEWARE)
 
 ROOT_URLCONF = "cruftbot.urls.development"
 
-INTERNAL_IPS = ["127.0.0.1"]
-
 DEVELOPMENT_PANELS = ["stories_django.debug_toolbar.StoriesPanel"]
 
 DEBUG_TOOLBAR_PANELS = PANELS_DEFAULTS + DEVELOPMENT_PANELS
+
+DEBUG_TOOLBAR_CONFIG = {
+    "SHOW_TOOLBAR_CALLBACK": "cruftbot.settings.development.show_toolbar"
+}
 
 SHELL_PLUS = "ipython"
 

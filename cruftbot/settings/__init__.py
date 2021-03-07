@@ -104,3 +104,4 @@ CSP_DEFAULT_SRC = ("'none'",)
 
 # @todo #15 Configure CSP Violation Reports
 #  (https://django-csp.readthedocs.io/en/latest/reports.html).
+#  Debug toolbar does not work with too strict settings.
