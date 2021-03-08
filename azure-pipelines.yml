@@ -1,0 +1,8 @@
+trigger:
+- master
+pool:
+  vmImage: ubuntu-latest
+steps:
+- script: true
+  displayName: noop
+# @todo #44 Run scripts on continuous integration.
