@@ -6,7 +6,7 @@ authors = ["Artem Malyshev <proofit404@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "3.9.1"
-dependencies = "5.2.0"
+dependencies = "6.0.1"
 Django = "3.1.7"
 django-activity-stream = "0.10.0"
 django-allauth = "0.44.0"

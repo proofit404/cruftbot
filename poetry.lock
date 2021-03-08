@@ -239,8 +239,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "dependencies"
-version = "5.2.0"
-description = "Dependency Injection for Humans"
+version = "6.0.1"
+description = "Constructor injection designed with OOP in mind."
 category = "main"
 optional = false
 python-versions = ">=3.6,<3.10"
@@ -1499,7 +1499,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.1"
-content-hash = "1cc329a7c5ca4c443d735fb5fb891e66ba97c6aca6b159eedb2a0acec5b98e9e"
+content-hash = "555a12a5ee8751797997cef19f2c8aadec6fcc6006e6c3995deeae35e83c4ba8"
 
 [metadata.files]
 appdirs = [
@@ -1683,8 +1683,8 @@ defusedxml = [
     {file = "defusedxml-0.6.0.tar.gz", hash = "sha256:f684034d135af4c6cbb949b8a4d2ed61634515257a67299e5f940fbaa34377f5"},
 ]
 dependencies = [
-    {file = "dependencies-5.2.0-py3-none-any.whl", hash = "sha256:ff5cb63e7d731dd868baaddf06e6a6995bcdc39eac539757512404386082f3d8"},
-    {file = "dependencies-5.2.0.tar.gz", hash = "sha256:bd04d6886212498ff4971630b71ae04632a8e53a76a04549c77eb408261abbbd"},
+    {file = "dependencies-6.0.1-py3-none-any.whl", hash = "sha256:5eeae3629c5d320173a10c31e562c66928f89282f22a6ec0cdbe2e0a460b9bbe"},
+    {file = "dependencies-6.0.1.tar.gz", hash = "sha256:951d72b43672a3f956ef0a63ef059e6c54b8be1f441ef0aea88d87382c14d0d1"},
 ]
 distlib = [
     {file = "distlib-0.3.1-py2.py3-none-any.whl", hash = "sha256:8c09de2c67b3e7deef7184574fc060ab8a793e7adbb183d942c389c8b13c52fb"},
