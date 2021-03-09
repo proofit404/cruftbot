@@ -25,7 +25,9 @@ poetry run flake8 .
 echo "==> Running bandit…"
 poetry run bandit -r cruftbot/
 
-# @todo #46 Run pdd locally.
+echo "==> Running pdd…"
+bundle exec pdd -f /dev/null
+
 # @todo #44 Setup remarklint.
 # @todo #44 Setup yamllint.
 # @todo #44 Setup tomlsort.

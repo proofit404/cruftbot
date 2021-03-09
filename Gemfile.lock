@@ -1,11 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    nokogiri (1.11.1-x86_64-linux)
+      racc (~> 1.4)
+    pdd (0.20.6)
+      nokogiri (~> 1.10)
+      rainbow (~> 3.0)
+      slop (~> 4.6)
+    racc (1.5.2)
+    rainbow (3.0.0)
+    slop (4.8.2)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  pdd (= 0.20.6)
 
 RUBY VERSION
    ruby 2.7.0p0
