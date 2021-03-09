@@ -4,9 +4,10 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-echo "==> Installing dependencies…"
+echo "==> Installing python dependencies…"
 poetry install
 
-# @todo #46 Install ruby packages with bundler.
+echo "==> Installing ruby dependencies…"
+bundle install
 
 # @todo #89 Install nodejs packages with npm.
