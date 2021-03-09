@@ -3,6 +3,11 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 steps:
+# @todo #155 Install python.
+
+# @todo #155 Install ruby.
+
+# @todo #155 Install nodejs.
 - script: true
   displayName: noop
 # @todo #44 Run scripts on continuous integration.
