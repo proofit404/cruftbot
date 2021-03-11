@@ -26,7 +26,7 @@ echo "==> Running bandit…"
 poetry run bandit -r cruftbot/
 
 echo "==> Running pdd…"
-bundle exec pdd -f /dev/null
+bundle exec pdd --quiet -f /dev/null
 
 # @todo #44 Setup remarklint.
 # @todo #44 Setup yamllint.

@@ -1,1 +1,4 @@
-from cruftbot.settings import *
+from split_settings.tools import include
+
+
+include("components/base.py")

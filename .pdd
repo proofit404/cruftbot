@@ -1,4 +1,6 @@
 --source=.
 --verbose
+--exclude=**/__pycache__/*
 --exclude=poetry.lock
 --exclude=package-lock.json
+--exclude=.coverage

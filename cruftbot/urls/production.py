@@ -1,1 +1,4 @@
-from cruftbot.urls import *
+from cruftbot.urls import urlpatterns
+
+
+__all__ = ["urlpatterns"]

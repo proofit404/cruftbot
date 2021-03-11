@@ -1,6 +1,12 @@
 from debug_toolbar.settings import PANELS_DEFAULTS
+from split_settings.tools import include
 
-from cruftbot.settings import *
+from cruftbot.settings.components.base import CORS_ALLOWED_ORIGINS
+from cruftbot.settings.components.base import INSTALLED_APPS
+from cruftbot.settings.components.base import MIDDLEWARE
+
+
+include("components/base.py")
 
 
 def show_toolbar(request):
