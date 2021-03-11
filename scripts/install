@@ -10,4 +10,5 @@ poetry install
 echo "==> Installing ruby dependencies…"
 bundle install
 
-# @todo #89 Install nodejs packages with npm.
+echo "==> Installing node dependencies…"
+npm install
