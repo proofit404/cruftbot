@@ -8,7 +8,14 @@ updates:
       - proofit404
     labels: []
     open-pull-requests-limit: 1
-  # @todo #46 Schedule ruby package updates.
+  - package-ecosystem: bundler
+    directory: /
+    schedule:
+      interval: daily
+    reviewers:
+      - proofit404
+    labels: []
+    open-pull-requests-limit: 1
   - package-ecosystem: npm
     directory: /
     schedule:
