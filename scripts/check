@@ -31,4 +31,6 @@ bundle exec pdd --quiet -f /dev/null
 # @todo #44 Setup remarklint.
 # @todo #44 Setup yamllint.
 # @todo #44 Setup tomlsort.
-# @todo #44 Setup jscpd.
+
+echo "==> Running jscpd…"
+npx jscpd cruftbot/
