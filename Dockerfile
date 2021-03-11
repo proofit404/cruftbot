@@ -16,15 +16,19 @@ RUN ln -s /usr/bin/python3.9 /usr/bin/python
 
 RUN apt-get install -y ruby-full
 
-# @todo #89 Install nodejs.
+RUN curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
 
-RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+RUN apt-get install -y nodejs
+
+RUN curl -fsSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 
 RUN ln -s $HOME/.poetry/bin/poetry /usr/local/bin/poetry
 
 RUN gem install bundler
 
 RUN bundle config set --global path $HOME/.cache
+
+RUN npm install -g npm
 
 RUN mkdir /app/
 
