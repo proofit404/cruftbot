@@ -16,8 +16,6 @@ RUN ln -s /usr/bin/python3.9 /usr/bin/python
 
 RUN apt-get install -y ruby-full
 
-# @todo #97 Configure bundler gem installation path compatible with docker volumes.
-
 # @todo #89 Install nodejs.
 
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
@@ -25,6 +23,8 @@ RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-
 RUN ln -s $HOME/.poetry/bin/poetry /usr/local/bin/poetry
 
 RUN gem install bundler
+
+RUN bundle config set --global path $HOME/.cache
 
 RUN mkdir /app/
 
