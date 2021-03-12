@@ -30,7 +30,9 @@ bundle exec pdd --quiet -f /dev/null
 
 # @todo #44 Setup remarklint.
 # @todo #44 Setup yamllint.
-# @todo #44 Setup tomlsort.
+
+echo "==> Running tomlsort…"
+git ls-files '*.toml' | xargs poetry run toml-sort --all --no-header --check
 
 echo "==> Running jscpd…"
 npx jscpd cruftbot/

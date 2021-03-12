@@ -17,3 +17,6 @@ git ls-files '*.py' | xargs poetry run docformatter --in-place --wrap-summaries 
 
 echo "==> Running black…"
 poetry run black --quiet .
+
+echo "==> Running tomlsort…"
+git ls-files '*.toml' | xargs poetry run toml-sort --all --no-header --in-place
