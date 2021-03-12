@@ -29,7 +29,9 @@ echo "==> Running pdd…"
 bundle exec pdd --quiet -f /dev/null
 
 # @todo #44 Setup remarklint.
-# @todo #44 Setup yamllint.
+
+echo "==> Running yamllint…"
+poetry run yamllint --strict .
 
 echo "==> Running tomlsort…"
 git ls-files '*.toml' | xargs poetry run toml-sort --all --no-header --check

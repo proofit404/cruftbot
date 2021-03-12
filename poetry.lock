@@ -1524,10 +1524,22 @@ category = "dev"
 optional = false
 python-versions = "*"
 
+[[package]]
+name = "yamllint"
+version = "1.26.0"
+description = "A linter for YAML files."
+category = "dev"
+optional = false
+python-versions = ">=3.5.*"
+
+[package.dependencies]
+pathspec = ">=0.5.3"
+pyyaml = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.2"
-content-hash = "80811b27d855281c810fa60c1ce4080c008df590b7f3e4f9c437b9f303e0ee66"
+content-hash = "933b0eda7e9b0a5d2b8fe2a4ce9fc62f5eef7459db573bf0b9adb9a519d881ac"
 
 [metadata.files]
 appdirs = [
@@ -2391,4 +2403,8 @@ virtualenv = [
 wcwidth = [
     {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
     {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
+]
+yamllint = [
+    {file = "yamllint-1.26.0-py2.py3-none-any.whl", hash = "sha256:8a5f8e442f49309eaf3e9d7232ce76f2fc8026f5c0c0b164b83f33fed1399637"},
+    {file = "yamllint-1.26.0.tar.gz", hash = "sha256:b0e4c89985c7f5f8451c2eb8c67d804d10ac13a4abe031cbf49bdf3465d01087"},
 ]
