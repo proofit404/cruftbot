@@ -14,10 +14,11 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
       - run: curl -fsSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
       - run: echo "${HOME}/.poetry/bin" >> ${GITHUB_PATH}
 # @todo #44 Run scripts on continuous integration.
-
-# @todo #155 Add UseRubyVersion@0 task.
 
 # @todo #155 Add NodeTool@0 task.
