@@ -28,7 +28,8 @@ poetry run bandit -r cruftbot/
 echo "==> Running pdd…"
 bundle exec pdd --quiet -f /dev/null
 
-# @todo #44 Setup remarklint.
+echo "==> Running remark…"
+npx remark --frail .
 
 echo "==> Running yamllint…"
 poetry run yamllint --strict .
