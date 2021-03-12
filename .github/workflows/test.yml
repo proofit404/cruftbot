@@ -11,9 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - run: curl -fsSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+      - run: echo "${HOME}/.poetry/bin" >> ${GITHUB_PATH}
 # @todo #44 Run scripts on continuous integration.
-
-# @todo #155 Add UsePythonVersion@0 task.
 
 # @todo #155 Add UseRubyVersion@0 task.
 
