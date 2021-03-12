@@ -1,13 +1,13 @@
 [tool.poetry]
+authors = ["Artem Malyshev <proofit404@gmail.com>"]
+description = "Apply cruft tool continuously in pull requests."
 name = "cruftbot"
 version = "0.1.0"
-description = "Apply cruft tool continuously in pull requests."
-authors = ["Artem Malyshev <proofit404@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.9.2"
-dependencies = "6.0.1"
 Django = "3.1.7"
+Jinja2 = "2.11.3"
+dependencies = "6.0.1"
 django-activity-stream = "0.10.0"
 django-allauth = "0.44.0"
 django-axes = "5.13.1"
@@ -26,10 +26,10 @@ django-split-settings = "1.0.1"
 djangorestframework = "3.12.2"
 drf-yasg = "1.20.0"
 generics = "3.3.0"
-Jinja2 = "2.11.3"
 psycopg2-binary = "2.8.6"
 pydantic = "1.8.1"
 pydantic-initialized = "0.4.0"
+python = "3.9.2"
 stories = "4.0.0"
 stories-pydantic = "0.5.0"
 
