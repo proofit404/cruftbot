@@ -2,7 +2,11 @@
 version: "3.8"
 services:
   app:
-    build: .
+    build:
+      context: .
+      args:
+        APP_UID: 1000
+        APP_GID: 1000
     image: cruftbot_app
     command: ./scripts/serve
     depends_on:

@@ -1,5 +1,9 @@
 FROM ubuntu:latest
 
+ARG APP_UID
+
+ARG APP_GID
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
@@ -33,3 +37,13 @@ RUN npm install -g npm
 RUN mkdir /app/
 
 WORKDIR /app/
+
+RUN groupadd --gid ${APP_GID} app
+
+RUN useradd --uid ${APP_UID} --gid app --create-home app
+
+# @todo #208 Change current user. But unfortunately it will
+#  require a lot of changes to be made. Compose file point
+#  to the wrong cache directory. Poetry installed to the
+#  root user home. Bundler cache directory is part of the
+#  root user home as well.
