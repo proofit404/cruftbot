@@ -1,4 +1,3 @@
-from debug_toolbar.settings import PANELS_DEFAULTS
 from split_settings.tools import include
 
 from cruftbot.settings.components.base import CORS_ALLOWED_ORIGINS
@@ -11,6 +10,11 @@ include(
     "components/templates.py",
     "components/staticfiles.py",
     "components/node_assets.py",
+    # @todo #183 Reuse components definition from the production file.
+    #  Development settings is simply an extension of used components
+    #  in addition to the production list. It would be nice not to
+    #  repeat components above this comment.
+    "components/debug_toolbar.py",
 )
 
 DEBUG = True
@@ -18,14 +22,8 @@ DEBUG = True
 ROOT_URLCONF = "cruftbot.urls.development"
 
 
-def show_toolbar(request):
-    return True
-
-
 DEVELOPMENT_APPS = [
     "django_extensions",
-    "debug_toolbar",
-    "stories_django",
     "django_test_migrations.contrib.django_checks.AutoNames",
     "django_migration_linter",
     "extra_checks",
@@ -34,19 +32,10 @@ DEVELOPMENT_APPS = [
 INSTALLED_APPS.extend(DEVELOPMENT_APPS)
 
 DEVELOPMENT_MIDDLEWARE = [
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "querycount.middleware.QueryCountMiddleware",
 ]
 
 MIDDLEWARE.extend(DEVELOPMENT_MIDDLEWARE)
-
-DEVELOPMENT_PANELS = ["stories_django.debug_toolbar.StoriesPanel"]
-
-DEBUG_TOOLBAR_PANELS = PANELS_DEFAULTS + DEVELOPMENT_PANELS
-
-DEBUG_TOOLBAR_CONFIG = {
-    "SHOW_TOOLBAR_CALLBACK": "cruftbot.settings.development.show_toolbar"
-}
 
 SHELL_PLUS = "ipython"
 

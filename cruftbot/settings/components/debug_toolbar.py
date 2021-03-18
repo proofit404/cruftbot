@@ -1,3 +1,25 @@
-# @todo #183 Extract debug_toolbar settings.
+from debug_toolbar.settings import PANELS_DEFAULTS
+
+from cruftbot.settings.components.base import INSTALLED_APPS
+from cruftbot.settings.components.base import MIDDLEWARE
+
+
+INSTALLED_APPS.append("debug_toolbar")
+
+INSTALLED_APPS.append("stories_django")
+
+MIDDLEWARE.append("debug_toolbar.middleware.DebugToolbarMiddleware")
+
+DEBUG_TOOLBAR_PANELS = PANELS_DEFAULTS + ["stories_django.debug_toolbar.StoriesPanel"]
+
+DEBUG_TOOLBAR_CONFIG = {
+    "SHOW_TOOLBAR_CALLBACK": "cruftbot.settings.development.show_toolbar"
+}
+
+
+def show_toolbar(request):
+    return True
+
+
 # @todo #190 Debug toolbar does not work without django template engine enabled.
 #  We have Jinja2 engine enabled only.
