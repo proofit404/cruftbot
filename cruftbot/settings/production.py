@@ -7,3 +7,7 @@ include(
     "components/staticfiles.py",
     "components/node_assets.py",
 )
+
+DEBUG = False
+
+ROOT_URLCONF = "cruftbot.urls.production"

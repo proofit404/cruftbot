@@ -9,15 +9,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 SECRET_KEY = env.str("CRUFTBOT_SECRET_KEY")
 
-DEBUG = env.bool("CRUFTBOT_DEBUG")
-
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
-    "django.contrib.staticfiles",
     "django.contrib.sites",
     "actstream",
     "axes",
@@ -43,8 +40,6 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "axes.middleware.AxesMiddleware",
 ]
-
-ROOT_URLCONF = "cruftbot.urls.production"
 
 WSGI_APPLICATION = "cruftbot.wsgi.application"
 

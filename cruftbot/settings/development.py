@@ -13,6 +13,10 @@ include(
     "components/node_assets.py",
 )
 
+DEBUG = True
+
+ROOT_URLCONF = "cruftbot.urls.development"
+
 
 def show_toolbar(request):
     return True
@@ -35,8 +39,6 @@ DEVELOPMENT_MIDDLEWARE = [
 ]
 
 MIDDLEWARE.extend(DEVELOPMENT_MIDDLEWARE)
-
-ROOT_URLCONF = "cruftbot.urls.development"
 
 DEVELOPMENT_PANELS = ["stories_django.debug_toolbar.StoriesPanel"]
 
