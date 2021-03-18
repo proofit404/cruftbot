@@ -44,15 +44,6 @@ MIDDLEWARE = [
     "axes.middleware.AxesMiddleware",
 ]
 
-TEMPLATES = [
-    {
-        "BACKEND": "django.template.backends.jinja2.Jinja2",
-        "DIRS": [],
-        "APP_DIRS": True,
-        "OPTIONS": {"environment": "jinja2.sandbox.SandboxedEnvironment"},
-    },
-]
-
 ROOT_URLCONF = "cruftbot.urls.production"
 
 WSGI_APPLICATION = "cruftbot.wsgi.application"
@@ -93,11 +84,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = "/static/"
+CSP_STYLE_SRC = ("'self'",)
 
-CSP_STYLE_SRC = ("'self'", "cdn.jsdelivr.net")
-
-CSP_SCRIPT_SRC = ("'self'", "cdn.jsdelivr.net")
+CSP_SCRIPT_SRC = ("'self'",)
 
 CSP_FONT_SRC = ("'self'",)
 

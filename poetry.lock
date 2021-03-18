@@ -464,6 +464,14 @@ python-versions = "*"
 Django = ">=2.0.1"
 
 [[package]]
+name = "django-node-assets"
+version = "0.9.8"
+description = "The Django application that allows install and serve assets via Node.js package manager infrastructure."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "django-querycount"
 version = "0.7.0"
 description = "Middleware that Prints the number of DB queries to the runserver console."
@@ -1539,7 +1547,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.2"
-content-hash = "65dad21754c28961564c3343a3c9ea743fa2bfded2c9dcf1a0dc7c3e3a5170de"
+content-hash = "e91a2fd46e5d390d62196ac39868fb0d188c329fea83f50f4dc7dfb7ce9e9b28"
 
 [metadata.files]
 appdirs = [
@@ -1799,6 +1807,10 @@ django-migration-linter = [
 django-model-utils = [
     {file = "django-model-utils-4.1.1.tar.gz", hash = "sha256:eb5dd05ef7d7ce6bc79cae54ea7c4a221f6f81e2aad7722933aee66489e7264b"},
     {file = "django_model_utils-4.1.1-py3-none-any.whl", hash = "sha256:ef7c440024e797796a3811432abdd2be8b5225ae64ef346f8bfc6de7d8e5d73c"},
+]
+django-node-assets = [
+    {file = "django-node-assets-0.9.8.tar.gz", hash = "sha256:da5955235edad425783ee5768c8c2eb41e7f89dda6a966b39e6e3e3bf50176c2"},
+    {file = "django_node_assets-0.9.8-py3-none-any.whl", hash = "sha256:012cae80cd8c9978ba8dbfb58def8096926556297961de46a72671cded0c8ed8"},
 ]
 django-querycount = [
     {file = "django-querycount-0.7.0.tar.gz", hash = "sha256:8f5123d78716ff0704f2373e746a7200b8d8417798ce4a99bf2de87e3768f9ce"},

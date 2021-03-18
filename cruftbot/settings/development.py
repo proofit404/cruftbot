@@ -6,7 +6,12 @@ from cruftbot.settings.components.base import INSTALLED_APPS
 from cruftbot.settings.components.base import MIDDLEWARE
 
 
-include("components/base.py")
+include(
+    "components/base.py",
+    "components/templates.py",
+    "components/staticfiles.py",
+    "components/node_assets.py",
+)
 
 
 def show_toolbar(request):
