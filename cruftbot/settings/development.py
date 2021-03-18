@@ -15,6 +15,7 @@ include(
     #  in addition to the production list. It would be nice not to
     #  repeat components above this comment.
     "components/debug_toolbar.py",
+    "components/extensions.py",
 )
 
 DEBUG = True
@@ -23,7 +24,6 @@ ROOT_URLCONF = "cruftbot.urls.development"
 
 
 DEVELOPMENT_APPS = [
-    "django_extensions",
     "django_test_migrations.contrib.django_checks.AutoNames",
     "django_migration_linter",
     "extra_checks",
@@ -36,10 +36,6 @@ DEVELOPMENT_MIDDLEWARE = [
 ]
 
 MIDDLEWARE.extend(DEVELOPMENT_MIDDLEWARE)
-
-SHELL_PLUS = "ipython"
-
-SHELL_PLUS_PRINT_SQL = True
 
 EXTRA_CHECKS = {
     "checks": [
