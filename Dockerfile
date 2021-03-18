@@ -24,13 +24,13 @@ RUN curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
 
 RUN apt-get install -y nodejs
 
-RUN curl -fsSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+RUN curl -fsSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | POETRY_HOME=/usr/local/poetry python
 
-RUN ln -s $HOME/.poetry/bin/poetry /usr/local/bin/poetry
+RUN chmod go+x /usr/local/poetry/bin/poetry
+
+RUN ln -s /usr/local/poetry/bin/poetry /usr/local/bin/poetry
 
 RUN gem install bundler
-
-RUN bundle config set --global path $HOME/.cache
 
 RUN npm install -g npm
 
@@ -42,8 +42,8 @@ RUN groupadd --gid ${APP_GID} app
 
 RUN useradd --uid ${APP_UID} --gid app --create-home app
 
-# @todo #208 Change current user. But unfortunately it will
-#  require a lot of changes to be made. Compose file point
-#  to the wrong cache directory. Poetry installed to the
-#  root user home. Bundler cache directory is part of the
-#  root user home as well.
+USER app
+
+RUN bundle config set --global path $HOME/.cache
+
+# @todo #212 Poetry directory $HOME/.cache/pypoetry/virtualenvs does not exists for some reason.

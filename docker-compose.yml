@@ -13,7 +13,7 @@ services:
       - db
     volumes:
       - .:/app
-      - user:/root/.cache
+      - user:/home/app/.cache
     ports:
       - "8000:8000"
       - "9000:9000"
