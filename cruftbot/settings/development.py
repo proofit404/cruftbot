@@ -2,7 +2,6 @@ from split_settings.tools import include
 
 from cruftbot.settings.components.base import CORS_ALLOWED_ORIGINS
 from cruftbot.settings.components.base import INSTALLED_APPS
-from cruftbot.settings.components.base import MIDDLEWARE
 
 
 include(
@@ -16,6 +15,7 @@ include(
     #  repeat components above this comment.
     "components/debug_toolbar.py",
     "components/extensions.py",
+    "components/querycount.py",
 )
 
 DEBUG = True
@@ -30,12 +30,6 @@ DEVELOPMENT_APPS = [
 ]
 
 INSTALLED_APPS.extend(DEVELOPMENT_APPS)
-
-DEVELOPMENT_MIDDLEWARE = [
-    "querycount.middleware.QueryCountMiddleware",
-]
-
-MIDDLEWARE.extend(DEVELOPMENT_MIDDLEWARE)
 
 EXTRA_CHECKS = {
     "checks": [

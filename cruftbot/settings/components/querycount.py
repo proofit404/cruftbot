@@ -1,1 +1,4 @@
-# @todo #183 Extract querycount settings.
+from cruftbot.settings.components.base import MIDDLEWARE
+
+
+MIDDLEWARE.append("querycount.middleware.QueryCountMiddleware")
