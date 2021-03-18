@@ -46,4 +46,4 @@ USER app
 
 RUN bundle config set --global path $HOME/.cache
 
-# @todo #212 Poetry directory $HOME/.cache/pypoetry/virtualenvs does not exists for some reason.
+RUN mkdir -p $HOME/.cache/pypoetry/virtualenvs
