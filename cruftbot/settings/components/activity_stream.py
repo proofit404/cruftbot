@@ -1,1 +1,4 @@
-# @todo #183 Extract activity stream settings.
+from cruftbot.settings.components.base import INSTALLED_APPS
+
+
+INSTALLED_APPS.append("actstream")

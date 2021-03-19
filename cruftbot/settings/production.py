@@ -6,6 +6,7 @@ include(
     "components/templates.py",
     "components/staticfiles.py",
     "components/node_assets.py",
+    "components/activity_stream.py",
 )
 
 DEBUG = False
