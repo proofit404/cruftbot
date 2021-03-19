@@ -16,6 +16,7 @@ include(
     "components/debug_toolbar.py",
     "components/extensions.py",
     "components/querycount.py",
+    "components/extra_checks.py",
 )
 
 DEBUG = True
@@ -26,24 +27,9 @@ ROOT_URLCONF = "cruftbot.urls.development"
 DEVELOPMENT_APPS = [
     "django_test_migrations.contrib.django_checks.AutoNames",
     "django_migration_linter",
-    "extra_checks",
 ]
 
 INSTALLED_APPS.extend(DEVELOPMENT_APPS)
-
-EXTRA_CHECKS = {
-    "checks": [
-        "no-unique-together",
-        "no-index-together",
-        "field-file-upload-to",
-        "field-text-null",
-        "field-boolean-null",
-        "field-null",
-        {"id": "field-foreign-key-db-index", "when": "indexes"},
-        "field-default-null",
-        "field-choices-constraint",
-    ]
-}
 
 DTM_IGNORED_MIGRATIONS = {("axes", "*")}
 
