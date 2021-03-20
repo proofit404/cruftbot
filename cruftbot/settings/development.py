@@ -1,7 +1,6 @@
 from split_settings.tools import include
 
 from cruftbot.settings.components.base import CORS_ALLOWED_ORIGINS
-from cruftbot.settings.components.base import INSTALLED_APPS
 
 
 include(
@@ -19,20 +18,12 @@ include(
     "components/querycount.py",
     "components/extra_checks.py",
     "components/migration_linter.py",
+    "components/test_migrations.py",
 )
 
 DEBUG = True
 
 ROOT_URLCONF = "cruftbot.urls.development"
-
-
-DEVELOPMENT_APPS = [
-    "django_test_migrations.contrib.django_checks.AutoNames",
-]
-
-INSTALLED_APPS.extend(DEVELOPMENT_APPS)
-
-DTM_IGNORED_MIGRATIONS = {("axes", "*")}
 
 DEVELOPMENT_ORIGINS = ["http://localhost:8000", "http://0.0.0.0:8000"]
 
