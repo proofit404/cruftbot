@@ -18,6 +18,7 @@ include(
     "components/extensions.py",
     "components/querycount.py",
     "components/extra_checks.py",
+    "components/migration_linter.py",
 )
 
 DEBUG = True
@@ -27,7 +28,6 @@ ROOT_URLCONF = "cruftbot.urls.development"
 
 DEVELOPMENT_APPS = [
     "django_test_migrations.contrib.django_checks.AutoNames",
-    "django_migration_linter",
 ]
 
 INSTALLED_APPS.extend(DEVELOPMENT_APPS)

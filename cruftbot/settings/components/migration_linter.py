@@ -1,1 +1,4 @@
-# @todo #183 Extract migration_linter settings.
+from cruftbot.settings.components.base import INSTALLED_APPS
+
+
+INSTALLED_APPS.append("django_migration_linter")
