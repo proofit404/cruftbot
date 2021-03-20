@@ -7,6 +7,7 @@ include(
     "components/staticfiles.py",
     "components/node_assets.py",
     "components/activity_stream.py",
+    "components/content_security_policy.py",
 )
 
 DEBUG = False
