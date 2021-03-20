@@ -8,6 +8,7 @@ include(
     "components/node_assets.py",
     "components/activity_stream.py",
     "components/content_security_policy.py",
+    "components/axes.py",
 )
 
 DEBUG = False

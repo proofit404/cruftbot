@@ -10,6 +10,7 @@ include(
     "components/node_assets.py",
     "components/activity_stream.py",
     "components/content_security_policy.py",
+    "components/axes.py",
     # @todo #183 Reuse components definition from the production file.
     #  Development settings is simply an extension of used components
     #  in addition to the production list. It would be nice not to
