@@ -375,14 +375,14 @@ dev = ["pytest (>=6,<7)", "pytest-cov (>=2,<3)", "pytest-django (>=4,<5)", "Djan
 
 [[package]]
 name = "django-feature-policy"
-version = "3.8.0"
-description = "Set the draft security HTTP header Permissions-Policy (previously Feature-Policy) on your Django app."
+version = "4.0.0"
+description = "django-feature-policy is now django-permissions-policy."
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = "*"
 
 [package.dependencies]
-Django = ">=2.2"
+django-permissions-policy = "*"
 
 [[package]]
 name = "django-filter"
@@ -470,6 +470,17 @@ description = "The Django application that allows install and serve assets via N
 category = "main"
 optional = false
 python-versions = "*"
+
+[[package]]
+name = "django-permissions-policy"
+version = "4.0.0"
+description = "Set the draft security HTTP header Permissions-Policy (previously Feature-Policy) on your Django app."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=2.2"
 
 [[package]]
 name = "django-querycount"
@@ -1547,7 +1558,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.2"
-content-hash = "53eebfb9d7385c0e0174631f83c68686cb1ee3a35e0a91c6d1ca7d472dff9e14"
+content-hash = "399cb901a2ca64f64802d0eda1c130691ca4285a3c820195e2dcaa4c02e6f390"
 
 [metadata.files]
 appdirs = [
@@ -1781,8 +1792,8 @@ django-extra-checks = [
     {file = "django_extra_checks-0.10.0-py3-none-any.whl", hash = "sha256:3648ae929a4685d9a0ca056c0c290815f75b52e360e752cb0d11931ebba75023"},
 ]
 django-feature-policy = [
-    {file = "django-feature-policy-3.8.0.tar.gz", hash = "sha256:a1a91a57c1e2722d037dea138645518aa75809e85a586b9a40400194013fb19b"},
-    {file = "django_feature_policy-3.8.0-py3-none-any.whl", hash = "sha256:020878ce3ce331fc1178f96b63b88b6d550e8e5383f0241e75693084e1f8ace6"},
+    {file = "django-feature-policy-4.0.0.tar.gz", hash = "sha256:13a9ed57c68fe949544b2ffcf2b1a1d70ad8e32b0d420d1a5c1623cd8575ec94"},
+    {file = "django_feature_policy-4.0.0-py3-none-any.whl", hash = "sha256:0ab63a635aab662add72c0e8c78a8896bed7eaf45be5b52ee56a8c1e4bcbb145"},
 ]
 django-filter = [
     {file = "django-filter-2.4.0.tar.gz", hash = "sha256:84e9d5bb93f237e451db814ed422a3a625751cbc9968b484ecc74964a8696b06"},
@@ -1814,6 +1825,10 @@ django-model-utils = [
 django-node-assets = [
     {file = "django-node-assets-0.9.8.tar.gz", hash = "sha256:da5955235edad425783ee5768c8c2eb41e7f89dda6a966b39e6e3e3bf50176c2"},
     {file = "django_node_assets-0.9.8-py3-none-any.whl", hash = "sha256:012cae80cd8c9978ba8dbfb58def8096926556297961de46a72671cded0c8ed8"},
+]
+django-permissions-policy = [
+    {file = "django-permissions-policy-4.0.0.tar.gz", hash = "sha256:fc468017e4a6d98f91695b40d6754fe592c2cd25b1ed97a602d12400093aa144"},
+    {file = "django_permissions_policy-4.0.0-py3-none-any.whl", hash = "sha256:2e69d6432a8fa16654a4344b20fc98642604b6cf86ef43ead23dba51645bd839"},
 ]
 django-querycount = [
     {file = "django-querycount-0.7.0.tar.gz", hash = "sha256:8f5123d78716ff0704f2373e746a7200b8d8417798ce4a99bf2de87e3768f9ce"},
