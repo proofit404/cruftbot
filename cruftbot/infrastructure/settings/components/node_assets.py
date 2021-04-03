@@ -1,6 +1,6 @@
-from cruftbot.settings.components.base import BASE_DIR
-from cruftbot.settings.components.base import INSTALLED_APPS
-from cruftbot.settings.components.staticfiles import STATICFILES_FINDERS
+from cruftbot.infrastructure.settings.components.base import BASE_DIR
+from cruftbot.infrastructure.settings.components.base import INSTALLED_APPS
+from cruftbot.infrastructure.settings.components.staticfiles import STATICFILES_FINDERS
 
 # @todo #183 Components can not import each other. Split settings `include`
 #  function execute python files instead of import. Thats means that if a

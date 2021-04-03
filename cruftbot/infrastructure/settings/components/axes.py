@@ -1,6 +1,6 @@
-from cruftbot.settings.components.base import AUTHENTICATION_BACKENDS
-from cruftbot.settings.components.base import INSTALLED_APPS
-from cruftbot.settings.components.base import MIDDLEWARE
+from cruftbot.infrastructure.settings.components.base import AUTHENTICATION_BACKENDS
+from cruftbot.infrastructure.settings.components.base import INSTALLED_APPS
+from cruftbot.infrastructure.settings.components.base import MIDDLEWARE
 
 
 INSTALLED_APPS.append("axes")

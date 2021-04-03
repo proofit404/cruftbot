@@ -13,4 +13,4 @@ include(
 
 DEBUG = False
 
-ROOT_URLCONF = "cruftbot.urls.production"
+ROOT_URLCONF = "cruftbot.infrastructure.urls.production"

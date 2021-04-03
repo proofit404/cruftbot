@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount.providers.github",
     "allauth.socialaccount.providers.gitlab",
     "corsheaders",
-    "cruftbot.apps.CruftbotConfig",
+    "cruftbot.infrastructure.apps.CruftbotConfig",
 ]
 
 MIDDLEWARE = [
@@ -37,7 +37,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-WSGI_APPLICATION = "cruftbot.wsgi.application"
+WSGI_APPLICATION = "cruftbot.infrastructure.wsgi.application"
 
 SITE_ID = env.int("CRUFTBOT_SITE_ID")
 

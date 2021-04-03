@@ -1,6 +1,6 @@
 from split_settings.tools import include
 
-from cruftbot.settings.components.base import CORS_ALLOWED_ORIGINS
+from cruftbot.infrastructure.settings.components.base import CORS_ALLOWED_ORIGINS
 
 
 include(
@@ -25,7 +25,7 @@ include(
 
 DEBUG = True
 
-ROOT_URLCONF = "cruftbot.urls.development"
+ROOT_URLCONF = "cruftbot.infrastructure.urls.development"
 
 DEVELOPMENT_ORIGINS = ["http://localhost:8000", "http://0.0.0.0:8000"]
 

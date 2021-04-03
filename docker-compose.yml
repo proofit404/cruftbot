@@ -18,7 +18,7 @@ services:
       - "8000:8000"
       - "9000:9000"
     environment:
-      - DJANGO_SETTINGS_MODULE=cruftbot.settings.development
+      - DJANGO_SETTINGS_MODULE=cruftbot.infrastructure.settings.development
       - PYTHONPATH=/app/
       - PYTHONUNBUFFERED=1
       - CRUFTBOT_SITE_ID=1

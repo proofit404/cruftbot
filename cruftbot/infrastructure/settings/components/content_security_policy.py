@@ -1,4 +1,4 @@
-from cruftbot.settings.components.base import MIDDLEWARE
+from cruftbot.infrastructure.settings.components.base import MIDDLEWARE
 
 
 MIDDLEWARE.append("csp.middleware.CSPMiddleware")

@@ -9,7 +9,9 @@ TEMPLATES = [
         "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
-            "environment": "cruftbot.settings.components.templates.environment"
+            "environment": (
+                "cruftbot.infrastructure.settings.components.templates.environment"
+            )
         },
     },
 ]
