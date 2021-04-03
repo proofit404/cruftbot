@@ -40,7 +40,7 @@ cached-property = "*"
 name = "attrs"
 version = "20.3.0"
 description = "Classes Without Boilerplate"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -714,6 +714,17 @@ python-versions = "*"
 flake8 = "*"
 
 [[package]]
+name = "flake8-no-types"
+version = "1.1.1"
+description = "A flake8 plugin to ban type hints."
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+flake8 = ">=3.0,<3.2.0 || >3.2.0,<4"
+
+[[package]]
 name = "flake8-plugin-utils"
 version = "1.3.1"
 description = "The package provides base classes and utils for flake8 plugin writing"
@@ -1121,6 +1132,14 @@ toml = "*"
 virtualenv = ">=20.0.8"
 
 [[package]]
+name = "primitives"
+version = "1.2.0"
+description = "Fake objects designed with OOP in mind."
+category = "dev"
+optional = false
+python-versions = ">=3.6,<3.10"
+
+[[package]]
 name = "prompt-toolkit"
 version = "3.0.8"
 description = "Library for building powerful interactive command lines in Python"
@@ -1162,29 +1181,6 @@ description = "C parser in Python"
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[[package]]
-name = "pydantic"
-version = "1.8.1"
-description = "Data validation and settings management using python 3.6 type hinting"
-category = "main"
-optional = false
-python-versions = ">=3.6.1"
-
-[package.dependencies]
-typing-extensions = ">=3.7.4.3"
-
-[package.extras]
-dotenv = ["python-dotenv (>=0.10.4)"]
-email = ["email-validator (>=1.0.3)"]
-
-[[package]]
-name = "pydantic-initialized"
-version = "0.4.0"
-description = "Pydantic model __init__ method with proper signature."
-category = "main"
-optional = false
-python-versions = ">=3.6,<3.10"
 
 [[package]]
 name = "pyflakes"
@@ -1396,14 +1392,6 @@ optional = false
 python-versions = ">=3.9,<4.0"
 
 [[package]]
-name = "stories-pydantic"
-version = "0.5.0"
-description = "Use pydantic models as stories context contract."
-category = "main"
-optional = false
-python-versions = ">=3.6,<3.10"
-
-[[package]]
 name = "tokenize-rt"
 version = "4.0.0"
 description = "A wrapper around the stdlib `tokenize` which roundtrips."
@@ -1484,7 +1472,7 @@ python-versions = "*"
 name = "typing-extensions"
 version = "3.7.4.3"
 description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -1558,7 +1546,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.2"
-content-hash = "1579fc9d3571a679fefb730203b352d71e5c1352591e05a2b4fdbadd1f145008"
+content-hash = "841d902fd63357e5f489e9186630d20d5e1f8be6d4ebd9bd95cc87096354a1bd"
 
 [metadata.files]
 appdirs = [
@@ -1905,6 +1893,10 @@ flake8-mutable = [
     {file = "flake8-mutable-1.2.0.tar.gz", hash = "sha256:ee9b77111b867d845177bbc289d87d541445ffcc6029a0c5c65865b42b18c6a6"},
     {file = "flake8_mutable-1.2.0-py2-none-any.whl", hash = "sha256:38fd9dadcbcda6550a916197bc40ed76908119dabb37fbcca30873666c31d2d5"},
 ]
+flake8-no-types = [
+    {file = "flake8-no-types-1.1.1.tar.gz", hash = "sha256:a4e5dc70d344d8f4eeaf8a18d2129d42535b3665033e7353ddef67a1858cb3f6"},
+    {file = "flake8_no_types-1.1.1-py3-none-any.whl", hash = "sha256:285724fda24390047f9e0a600947015531546243d8167925284f974e8b279724"},
+]
 flake8-plugin-utils = [
     {file = "flake8-plugin-utils-1.3.1.tar.gz", hash = "sha256:6e996bc24ebe327558f24efd106f1be5f0c033c8cbb6eed815631f73d487f1c9"},
     {file = "flake8_plugin_utils-1.3.1-py3-none-any.whl", hash = "sha256:efdbf9d15b18f72b7c348dd360f30e7cf3e73aa67ff832d5343eb5aa1115f250"},
@@ -2095,6 +2087,10 @@ pre-commit = [
     {file = "pre_commit-2.11.1-py2.py3-none-any.whl", hash = "sha256:94c82f1bf5899d56edb1d926732f4e75a7df29a0c8c092559c77420c9d62428b"},
     {file = "pre_commit-2.11.1.tar.gz", hash = "sha256:de55c5c72ce80d79106e48beb1b54104d16495ce7f95b0c7b13d4784193a00af"},
 ]
+primitives = [
+    {file = "primitives-1.2.0-py3-none-any.whl", hash = "sha256:55b9a4987ceaad3792d5f58f9798f12d816f7ee50b430e6582e48d805fe0d152"},
+    {file = "primitives-1.2.0.tar.gz", hash = "sha256:0477e8b43d1efb457d7cce447a90e55ab42d72df07f006121a307601cd6de23b"},
+]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.8-py3-none-any.whl", hash = "sha256:7debb9a521e0b1ee7d2fe96ee4bd60ef03c6492784de0547337ca4433e46aa63"},
     {file = "prompt_toolkit-3.0.8.tar.gz", hash = "sha256:25c95d2ac813909f813c93fde734b6e44406d1477a9faef7c915ff37d39c0a8c"},
@@ -2147,34 +2143,6 @@ pycodestyle = [
 pycparser = [
     {file = "pycparser-2.20-py2.py3-none-any.whl", hash = "sha256:7582ad22678f0fcd81102833f60ef8d0e57288b6b5fb00323d101be910e35705"},
     {file = "pycparser-2.20.tar.gz", hash = "sha256:2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0"},
-]
-pydantic = [
-    {file = "pydantic-1.8.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:0c40162796fc8d0aa744875b60e4dc36834db9f2a25dbf9ba9664b1915a23850"},
-    {file = "pydantic-1.8.1-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:fff29fe54ec419338c522b908154a2efabeee4f483e48990f87e189661f31ce3"},
-    {file = "pydantic-1.8.1-cp36-cp36m-manylinux2014_i686.whl", hash = "sha256:fbfb608febde1afd4743c6822c19060a8dbdd3eb30f98e36061ba4973308059e"},
-    {file = "pydantic-1.8.1-cp36-cp36m-manylinux2014_x86_64.whl", hash = "sha256:eb8ccf12295113ce0de38f80b25f736d62f0a8d87c6b88aca645f168f9c78771"},
-    {file = "pydantic-1.8.1-cp36-cp36m-win_amd64.whl", hash = "sha256:20d42f1be7c7acc352b3d09b0cf505a9fab9deb93125061b376fbe1f06a5459f"},
-    {file = "pydantic-1.8.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:dde4ca368e82791de97c2ec019681ffb437728090c0ff0c3852708cf923e0c7d"},
-    {file = "pydantic-1.8.1-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:3bbd023c981cbe26e6e21c8d2ce78485f85c2e77f7bab5ec15b7d2a1f491918f"},
-    {file = "pydantic-1.8.1-cp37-cp37m-manylinux2014_i686.whl", hash = "sha256:830ef1a148012b640186bf4d9789a206c56071ff38f2460a32ae67ca21880eb8"},
-    {file = "pydantic-1.8.1-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:fb77f7a7e111db1832ae3f8f44203691e15b1fa7e5a1cb9691d4e2659aee41c4"},
-    {file = "pydantic-1.8.1-cp37-cp37m-win_amd64.whl", hash = "sha256:3bcb9d7e1f9849a6bdbd027aabb3a06414abd6068cb3b21c49427956cce5038a"},
-    {file = "pydantic-1.8.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:2287ebff0018eec3cc69b1d09d4b7cebf277726fa1bd96b45806283c1d808683"},
-    {file = "pydantic-1.8.1-cp38-cp38-manylinux1_i686.whl", hash = "sha256:4bbc47cf7925c86a345d03b07086696ed916c7663cb76aa409edaa54546e53e2"},
-    {file = "pydantic-1.8.1-cp38-cp38-manylinux2014_i686.whl", hash = "sha256:6388ef4ef1435364c8cc9a8192238aed030595e873d8462447ccef2e17387125"},
-    {file = "pydantic-1.8.1-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:dd4888b300769ecec194ca8f2699415f5f7760365ddbe243d4fd6581485fa5f0"},
-    {file = "pydantic-1.8.1-cp38-cp38-win_amd64.whl", hash = "sha256:8fbb677e4e89c8ab3d450df7b1d9caed23f254072e8597c33279460eeae59b99"},
-    {file = "pydantic-1.8.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:2f2736d9a996b976cfdfe52455ad27462308c9d3d0ae21a2aa8b4cd1a78f47b9"},
-    {file = "pydantic-1.8.1-cp39-cp39-manylinux1_i686.whl", hash = "sha256:3114d74329873af0a0e8004627f5389f3bb27f956b965ddd3e355fe984a1789c"},
-    {file = "pydantic-1.8.1-cp39-cp39-manylinux2014_i686.whl", hash = "sha256:258576f2d997ee4573469633592e8b99aa13bda182fcc28e875f866016c8e07e"},
-    {file = "pydantic-1.8.1-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:c17a0b35c854049e67c68b48d55e026c84f35593c66d69b278b8b49e2484346f"},
-    {file = "pydantic-1.8.1-cp39-cp39-win_amd64.whl", hash = "sha256:e8bc082afef97c5fd3903d05c6f7bb3a6af9fc18631b4cc9fedeb4720efb0c58"},
-    {file = "pydantic-1.8.1-py3-none-any.whl", hash = "sha256:e3f8790c47ac42549dc8b045a67b0ca371c7f66e73040d0197ce6172b385e520"},
-    {file = "pydantic-1.8.1.tar.gz", hash = "sha256:26cf3cb2e68ec6c0cfcb6293e69fb3450c5fd1ace87f46b64f678b0d29eac4c3"},
-]
-pydantic-initialized = [
-    {file = "pydantic-initialized-0.4.0.tar.gz", hash = "sha256:ec99786cab2ab99854aaee0bf66ec24ef64b5fb98ee74d488a0d1a04de9705e8"},
-    {file = "pydantic_initialized-0.4.0-py3-none-any.whl", hash = "sha256:1cb1b87629841fffabfafb546c284f5ea8ebbb880baf0e2b237d18e5561cb250"},
 ]
 pyflakes = [
     {file = "pyflakes-2.3.0-py2.py3-none-any.whl", hash = "sha256:910208209dcea632721cb58363d0f72913d9e8cf64dc6f8ae2e02a3609aba40d"},
@@ -2306,10 +2274,6 @@ stories = [
 stories-django = [
     {file = "stories-django-0.1.0.tar.gz", hash = "sha256:f61fcf5dead41aa06ca4e9c173dc21caa59337708a83dd89c7ac63624bd01d6b"},
     {file = "stories_django-0.1.0-py3-none-any.whl", hash = "sha256:f4c3091a198c5d369bf3b98a9b7a2a53a933a733a9a68434b1f423e3ac34464d"},
-]
-stories-pydantic = [
-    {file = "stories-pydantic-0.5.0.tar.gz", hash = "sha256:3a1e9c06e27d72c7abfdb9185d0d639e7e877bb2dbb39f9c8d1c17056b84caa9"},
-    {file = "stories_pydantic-0.5.0-py3-none-any.whl", hash = "sha256:d8cd15427fcd415555c404dcb9bc35f863496c54a11b5491237d0a827ec82890"},
 ]
 tokenize-rt = [
     {file = "tokenize_rt-4.0.0-py2.py3-none-any.whl", hash = "sha256:c47d3bd00857c24edefccdd6dc99c19d4ceed77c5971a3e2fac007fb0c02e39d"},
