@@ -6,4 +6,10 @@ per-file-ignores =
   # These modules are interfaces.  They contains public classes and
   # functions avalable from the outside.  No code is allowed to be
   # imported from the nested modules.
-  */__init__.py: F401
+  cruftbot/entities/__init__.py: F401
+  cruftbot/usecases/__init__.py: F401
+  # We need a way to split Django settings file into a set of smaller
+  # components. For that reason we would allow star-import to be used
+  # in all settings file we have.
+  cruftbot/infrastructure/settings/production.py: F401, F403
+  cruftbot/infrastructure/settings/development.py: F401, F403

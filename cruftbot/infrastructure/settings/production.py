@@ -1,15 +1,11 @@
-from split_settings.tools import include
+from cruftbot.infrastructure.settings.components.activity_stream import *
+from cruftbot.infrastructure.settings.components.axes import *
+from cruftbot.infrastructure.settings.components.base import *
+from cruftbot.infrastructure.settings.components.content_security_policy import *
+from cruftbot.infrastructure.settings.components.node_assets import *
+from cruftbot.infrastructure.settings.components.staticfiles import *
+from cruftbot.infrastructure.settings.components.templates import *
 
-
-include(
-    "components/base.py",
-    "components/templates.py",
-    "components/staticfiles.py",
-    "components/node_assets.py",
-    "components/activity_stream.py",
-    "components/content_security_policy.py",
-    "components/axes.py",
-)
 
 DEBUG = False
 

@@ -1,27 +1,24 @@
-from split_settings.tools import include
-
+from cruftbot.infrastructure.settings.components.activity_stream import *
+from cruftbot.infrastructure.settings.components.axes import *
+from cruftbot.infrastructure.settings.components.base import *
 from cruftbot.infrastructure.settings.components.base import CORS_ALLOWED_ORIGINS
+from cruftbot.infrastructure.settings.components.content_security_policy import *
+from cruftbot.infrastructure.settings.components.debug_toolbar import *
+from cruftbot.infrastructure.settings.components.extensions import *
+from cruftbot.infrastructure.settings.components.extra_checks import *
+from cruftbot.infrastructure.settings.components.migration_linter import *
+from cruftbot.infrastructure.settings.components.node_assets import *
+from cruftbot.infrastructure.settings.components.querycount import *
+from cruftbot.infrastructure.settings.components.staticfiles import *
+from cruftbot.infrastructure.settings.components.templates import *
+from cruftbot.infrastructure.settings.components.test_migrations import *
 
 
-include(
-    "components/base.py",
-    "components/templates.py",
-    "components/staticfiles.py",
-    "components/node_assets.py",
-    "components/activity_stream.py",
-    "components/content_security_policy.py",
-    "components/axes.py",
-    # @todo #183 Reuse components definition from the production file.
-    #  Development settings is simply an extension of used components
-    #  in addition to the production list. It would be nice not to
-    #  repeat components above this comment.
-    "components/debug_toolbar.py",
-    "components/extensions.py",
-    "components/querycount.py",
-    "components/extra_checks.py",
-    "components/migration_linter.py",
-    "components/test_migrations.py",
-)
+# @todo #183 Reuse components definition from the production file.
+#  Development settings is simply an extension of used components
+#  in addition to the production list. It would be nice not to
+#  repeat components above this comment.
+
 
 DEBUG = True
 
