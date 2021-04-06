@@ -356,11 +356,14 @@ python-versions = "*"
 
 [[package]]
 name = "django-extensions"
-version = "3.1.1"
+version = "3.1.2"
 description = "Extensions for Django"
 category = "dev"
 optional = false
 python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=2.2"
 
 [[package]]
 name = "django-extra-checks"
@@ -1538,7 +1541,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.2"
-content-hash = "dc0bcd6d50d7cf02fee4946f5d36411a8ac8ada40a5d079195460fcdb6c410a7"
+content-hash = "284629e734f42c406b207d97b45d4f4e00ee06b9f0b425da91b22f72544cf5ef"
 
 [metadata.files]
 appdirs = [
@@ -1764,8 +1767,8 @@ django-environ = [
     {file = "django_environ-0.4.5-py2.py3-none-any.whl", hash = "sha256:c57b3c11ec1f319d9474e3e5a79134f40174b17c7cc024bbb2fad84646b120c4"},
 ]
 django-extensions = [
-    {file = "django-extensions-3.1.1.tar.gz", hash = "sha256:674ad4c3b1587a884881824f40212d51829e662e52f85b012cd83d83fe1271d9"},
-    {file = "django_extensions-3.1.1-py3-none-any.whl", hash = "sha256:9507f8761ee760748938fd8af766d0608fb2738cf368adfa1b2451f61c15ae35"},
+    {file = "django-extensions-3.1.2.tar.gz", hash = "sha256:081828e985485662f62a22340c1506e37989d14b927652079a5b7cd84a82368b"},
+    {file = "django_extensions-3.1.2-py3-none-any.whl", hash = "sha256:17f85f4dcdd5eea09b8c4f0bad8f0370bf2db6d03e61b431fa7103fee29888de"},
 ]
 django-extra-checks = [
     {file = "django-extra-checks-0.10.0.tar.gz", hash = "sha256:4bdee67c8bd89ca6048af6e4ae9879b285f4859c73a065a3ca8e2e20ef68b403"},
