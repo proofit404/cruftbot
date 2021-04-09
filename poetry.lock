@@ -367,7 +367,7 @@ Django = ">=2.2"
 
 [[package]]
 name = "django-extra-checks"
-version = "0.10.0"
+version = "0.11.0"
 description = "Collection of useful checks for Django Checks Framework"
 category = "dev"
 optional = false
@@ -1541,7 +1541,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.2"
-content-hash = "0996ecc8c22a773b625a300c115c3ffccc5a5ee79a74447759f4c2fbe24abbcb"
+content-hash = "55e33ceddecb4aed91235eece4ffe4be05a29cc75d97cccaeafaa1addc0cc924"
 
 [metadata.files]
 appdirs = [
@@ -1771,8 +1771,8 @@ django-extensions = [
     {file = "django_extensions-3.1.2-py3-none-any.whl", hash = "sha256:17f85f4dcdd5eea09b8c4f0bad8f0370bf2db6d03e61b431fa7103fee29888de"},
 ]
 django-extra-checks = [
-    {file = "django-extra-checks-0.10.0.tar.gz", hash = "sha256:4bdee67c8bd89ca6048af6e4ae9879b285f4859c73a065a3ca8e2e20ef68b403"},
-    {file = "django_extra_checks-0.10.0-py3-none-any.whl", hash = "sha256:3648ae929a4685d9a0ca056c0c290815f75b52e360e752cb0d11931ebba75023"},
+    {file = "django-extra-checks-0.11.0.tar.gz", hash = "sha256:61681433f2df8b8932676c216472b7f5554bda0018058d0a0bac89bf377347bd"},
+    {file = "django_extra_checks-0.11.0-py3-none-any.whl", hash = "sha256:b1a19c03243d67c380c8af60c1ef837323c21e2fd888e0fd532d1df5f1866ba0"},
 ]
 django-feature-policy = [
     {file = "django-feature-policy-4.0.0.tar.gz", hash = "sha256:13a9ed57c68fe949544b2ffcf2b1a1d70ad8e32b0d420d1a5c1623cd8575ec94"},
