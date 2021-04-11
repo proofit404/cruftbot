@@ -28,7 +28,7 @@ djangorestframework = "3.12.4"
 drf-yasg = "1.20.0"
 generics = "3.3.0"
 psycopg2-binary = "2.8.6"
-python = "3.9.2"
+python = "3.9.4"
 stories = "4.0.0"
 
 [tool.poetry.dev-dependencies]

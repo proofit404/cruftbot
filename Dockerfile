@@ -16,7 +16,11 @@ RUN apt-get update
 
 RUN apt-get install -y python3.9 python3.9-venv python3.9-dev
 
-RUN ln -s /usr/bin/python3.9 /usr/bin/python
+RUN ln -s /usr/bin/python3.9 /usr/local/sbin/python3.9
+
+RUN ln -s /usr/bin/python3.9 /usr/local/sbin/python3
+
+RUN ln -s /usr/bin/python3.9 /usr/local/sbin/python
 
 RUN apt-get install -y ruby-full
 
