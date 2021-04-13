@@ -820,6 +820,17 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "hunter"
+version = "3.3.2"
+description = "Hunter is a flexible code tracing toolkit."
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+manhole = {version = ">=1.5", markers = "platform_system != \"Windows\""}
+
+[[package]]
 name = "identify"
 version = "2.2.2"
 description = "File identification library for Python"
@@ -957,6 +968,14 @@ six = ">=1.11.0"
 
 [package.extras]
 languages = ["nltk (>=3.2.5,<3.5)", "nltk (>=3.2.5)"]
+
+[[package]]
+name = "manhole"
+version = "1.8.0"
+description = "Manhole is in-process service that will accept unix domain socket connections and present the"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "markdown"
@@ -1555,7 +1574,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.4"
-content-hash = "0ad2c94c8a60f32f7bc04f4ef12a879a4a599003c0befa387dc9ddb3766615db"
+content-hash = "f8f763012a99341019bd7d4f58b3a3e2dd6d97fcb1c52dd12e03e2ba19879226"
 
 [metadata.files]
 appdirs = [
@@ -1939,6 +1958,30 @@ gitpython = [
 gprof2dot = [
     {file = "gprof2dot-2021.2.21.tar.gz", hash = "sha256:1223189383b53dcc8ecfd45787ac48c0ed7b4dbc16ee8b88695d053eea1acabf"},
 ]
+hunter = [
+    {file = "hunter-3.3.2-cp27-cp27m-macosx_10_15_x86_64.whl", hash = "sha256:f0dfd627e999a4965572075a38762db465ce7f934aa7a3f9c694f671846fe909"},
+    {file = "hunter-3.3.2-cp27-cp27m-win32.whl", hash = "sha256:9e760e27dcbf5c7eb837023cef77d54171216522e8f99079646fcc3ef5cab79a"},
+    {file = "hunter-3.3.2-cp27-cp27m-win_amd64.whl", hash = "sha256:cadc8a440d7211f8575f850cc13157f1f1261411b3e60e513a1e78cb1f909556"},
+    {file = "hunter-3.3.2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:55339d254f97adf492d7fd7ef4b997d0ce5224f6a468e554fe8431bff652200e"},
+    {file = "hunter-3.3.2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:138c77074b854bb433d533407c00dc7c55dd6d724cabd99c081429134cdf16cf"},
+    {file = "hunter-3.3.2-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:2b0087ac80cee5cc1299519ced9405bfae5ad2000cc3c7255f1f6d7ee6db4f0a"},
+    {file = "hunter-3.3.2-cp36-cp36m-win32.whl", hash = "sha256:d45c236a164bd954e4bfe90799f004ea0f3208805054fac2a919a3e3b2ffd88a"},
+    {file = "hunter-3.3.2-cp36-cp36m-win_amd64.whl", hash = "sha256:38b230b7dd52a17cb68206cb620865e0558405f60342179de8833a96b4443540"},
+    {file = "hunter-3.3.2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:f88ca3872db3848fd5fe4d326d8c7c75733f6694d02dbc02d2112d46fe7ba64c"},
+    {file = "hunter-3.3.2-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:53110e9d0408c9fa3e66be44fdfe4027f1988bf4516bfca37e8a08044856b359"},
+    {file = "hunter-3.3.2-cp37-cp37m-win32.whl", hash = "sha256:330c024d0e41d3e0d672a9318c84772a11d226d310df9a997c1ce445814c4dba"},
+    {file = "hunter-3.3.2-cp37-cp37m-win_amd64.whl", hash = "sha256:acdaba45d2a3cea2364a31bbdf312fcd16f867a2a6932ec65e1e96fe25d62a98"},
+    {file = "hunter-3.3.2-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:d0c53a1af14e23142c86bb7c9240762d1a570e77f4ca4932033f1cd657cf24cd"},
+    {file = "hunter-3.3.2-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:5bce963fe1f18d3a12038bafe11b1331288ed3e8226b177c0b05e110643e0742"},
+    {file = "hunter-3.3.2-cp38-cp38-win32.whl", hash = "sha256:c12c7ea11204f255f56e8a667a4433d7dd686868ea28a9f4f0f5fc3e7126689d"},
+    {file = "hunter-3.3.2-cp38-cp38-win_amd64.whl", hash = "sha256:671bd9d699c1a2628fa787f81c0d57f5adfe26ef5d492ab5793fbc014f18a1ee"},
+    {file = "hunter-3.3.2-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:7a18febafedfd2efab6ed1a8401c19b1df8014161259653b4139c9b0f0f03861"},
+    {file = "hunter-3.3.2-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:e979b4f8d5a1df72b61576cf5536a1d4f0d9cf2749f07e0c85236e43e68f8773"},
+    {file = "hunter-3.3.2-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:e38eabc54734a64dc1f1888028776bb19e75375adc251e48e30c8d35cb4f1d69"},
+    {file = "hunter-3.3.2-cp39-cp39-win32.whl", hash = "sha256:13017e920f9d1de08a824136962a77d7b4715cf61b4da754d7f95c7d8874b44c"},
+    {file = "hunter-3.3.2-cp39-cp39-win_amd64.whl", hash = "sha256:4a6370230193a4b06db3e693e9d1f63d2e1e94ab4b61ba269a321d4fae9eee4a"},
+    {file = "hunter-3.3.2.tar.gz", hash = "sha256:a91c30047ef6fe4f3189ab2a46655cbb40c7fa25abad0a881f87452eebc238cf"},
+]
 identify = [
     {file = "identify-2.2.2-py2.py3-none-any.whl", hash = "sha256:c7c0f590526008911ccc5ceee6ed7b085cbc92f7b6591d0ee5913a130ad64034"},
     {file = "identify-2.2.2.tar.gz", hash = "sha256:43cb1965e84cdd247e875dec6d13332ef5be355ddc16776396d98089b9053d87"},
@@ -1981,6 +2024,10 @@ livereload = [
 lunr = [
     {file = "lunr-0.5.8-py2.py3-none-any.whl", hash = "sha256:aab3f489c4d4fab4c1294a257a30fec397db56f0a50273218ccc3efdbf01d6ca"},
     {file = "lunr-0.5.8.tar.gz", hash = "sha256:c4fb063b98eff775dd638b3df380008ae85e6cb1d1a24d1cd81a10ef6391c26e"},
+]
+manhole = [
+    {file = "manhole-1.8.0-py2.py3-none-any.whl", hash = "sha256:a17f62f9d47bd9a53438f655d351d7d2b0d6e9d805665fc775e4cb6cbbb4440b"},
+    {file = "manhole-1.8.0.tar.gz", hash = "sha256:bada20a25b547b395d472e2e08928f0437df26bbdbda4797c55863198e29a21f"},
 ]
 markdown = [
     {file = "Markdown-3.3.4-py3-none-any.whl", hash = "sha256:96c3ba1261de2f7547b46a00ea8463832c921d3f9d6aba3f255a6f71386db20c"},

@@ -5,7 +5,7 @@ from environ import Env
 
 env = Env()
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent.parent
 
 SECRET_KEY = env.str("CRUFTBOT_SECRET_KEY")
 
