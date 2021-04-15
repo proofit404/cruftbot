@@ -1,5 +1,8 @@
 export default async (): undefined => {
-// @todo #92 Pull request title should start with capital letter.
+  if (!/^[A-Z]/.test(danger.github.pr.title)) {
+    fail("Pull request title should start with capital letter.");
+    return;
+  }
 // @todo #92 Issue title should start with capital letter.
 // @todo #92 Commit message should start with capital letter.
 
