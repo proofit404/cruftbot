@@ -27,3 +27,5 @@ jobs:
       - run: ./scripts/check
       # @todo #44 Run test script.
       - run: ./scripts/review
+        env:
+          GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_TOKEN }}

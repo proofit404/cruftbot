@@ -1,3 +1,4 @@
+export default async (): undefined => {
 // @todo #92 Pull request title should start with capital letter.
 // @todo #92 Issue title should start with capital letter.
 // @todo #92 Commit message should start with capital letter.
@@ -14,3 +15,4 @@
 
 // @todo #92 Pull request should not have labels.
 // @todo #92 Issue should not have labels.
+};

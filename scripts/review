@@ -5,4 +5,4 @@ set -o nounset
 set -o pipefail
 
 echo "==> Running danger…"
-# @todo #92 Run danger tool.
+npx danger ci
