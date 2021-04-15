@@ -25,6 +25,9 @@ poetry run flake8 .
 echo "==> Running bandit…"
 poetry run bandit -r cruftbot/
 
+echo "==> Running xenon…"
+poetry run xenon --max-absolute A --max-modules A --max-average A --ignore node_modules .
+
 echo "==> Running pdd…"
 bundle exec pdd --quiet -f /dev/null
 
