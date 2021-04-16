@@ -5,8 +5,10 @@ export default async (): undefined => {
   }
 // @todo #92 Issue title should start with capital letter.
 // @todo #92 Commit message should start with capital letter.
-
-// @todo #92 Pull request title should ends with the dot.
+  if (!/\.$/.test(danger.github.pr.title)) {
+    fail("Pull request title should ends with the dot.");
+    return;
+  }
 // @todo #92 Issue title should ends with the dot.
 // @todo #92 Commit message should ends with the dot.
 
