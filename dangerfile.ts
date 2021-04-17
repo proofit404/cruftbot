@@ -18,6 +18,9 @@ export default async (): undefined => {
 
 // @todo #92 Multiline commit message should separate title with new line.
 
-// @todo #92 Pull request should not have labels.
+  if (danger.github.pr.labels.length > 0) {
+    fail("Pull request should not have labels.");
+    return;
+  }
 // @todo #92 Issue should not have labels.
 };
