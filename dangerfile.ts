@@ -36,6 +36,11 @@ export default async (): undefined => {
     issue_number: parseInt(issueNumber),
   });
 
+  if (issueJSON.status !== 200) {
+    fail(`Unable to check issue #${issueNumber}`);
+    return;
+  }
+
   // @todo #92 Multiline commit message should separate title with new line.
 
   if (danger.github.pr.labels.length > 0) {
@@ -43,5 +48,8 @@ export default async (): undefined => {
     return;
   }
 
-  // @todo #92 Issue should not have labels.
+  if (issueJSON.data.labels.length > 0) {
+    fail("Issue should not have labels.");
+    return;
+  }
 };
