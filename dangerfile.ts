@@ -24,7 +24,10 @@ export default async (): undefined => {
     return;
   }
 
-  // @todo #92 Issue title should start with capital letter.
+  if (!/^[A-Z]/.test(issueJSON.data.title)) {
+    fail("Issue title should start with capital letter.");
+    return;
+  }
 
   // @todo #92 Commit message should start with capital letter.
 
