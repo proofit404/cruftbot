@@ -25,6 +25,7 @@ export default async (): undefined => {
   }
 
   if (!/^[A-Z]/.test(issueJSON.data.title)) {
+    // @todo #92 Exclude puzzles created by 0pdd bot from such check.
     fail("Issue title should start with capital letter.");
     return;
   }
