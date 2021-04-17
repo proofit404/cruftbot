@@ -1,4 +1,24 @@
 export default async (): undefined => {
+  const pullRequestTest = danger.github.pr.body.match(/^#(\d+)$/);
+
+  if (!pullRequestTest) {
+    fail("Pull request body SHOULD contain issue number.");
+    return;
+  }
+
+  const issueNumber = pullRequestTest[1];
+
+  const issueJSON = await danger.github.api.issues.get({
+    owner: danger.github.thisPR.owner,
+    repo: danger.github.thisPR.repo,
+    issue_number: parseInt(issueNumber),
+  });
+
+  if (issueJSON.status !== 200) {
+    fail(`Unable to check issue #${issueNumber}`);
+    return;
+  }
+
   if (!/^[A-Z]/.test(danger.github.pr.title)) {
     fail("Pull request title should start with capital letter.");
     return;
@@ -20,26 +40,6 @@ export default async (): undefined => {
   // @todo #92 Commit title SHOULD contain issue number.
 
   // @todo #92 Pull request title SHOULD NOT contain issue number.
-
-  const pullRequestTest = danger.github.pr.body.match(/^#(\d+)$/);
-
-  if (!pullRequestTest) {
-    fail("Pull request body SHOULD contain issue number.");
-    return;
-  }
-
-  const issueNumber = pullRequestTest[1];
-
-  const issueJSON = await danger.github.api.issues.get({
-    owner: danger.github.thisPR.owner,
-    repo: danger.github.thisPR.repo,
-    issue_number: parseInt(issueNumber),
-  });
-
-  if (issueJSON.status !== 200) {
-    fail(`Unable to check issue #${issueNumber}`);
-    return;
-  }
 
   // @todo #92 Multiline commit message should separate title with new line.
 
