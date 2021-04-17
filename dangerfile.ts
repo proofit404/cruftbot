@@ -38,7 +38,10 @@ export default async (): undefined => {
     return;
   }
 
-  // @todo #92 Issue title should ends with the dot.
+  if (!isBotIssue && !/\.$/.test(issueJSON.data.title)) {
+    fail("Issue title should ends with the dot.");
+    return;
+  }
 
   // @todo #92 Commit message should ends with the dot.
 
