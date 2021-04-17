@@ -19,13 +19,14 @@ export default async (): undefined => {
     return;
   }
 
+  const isBotIssue = issueJSON.data.user.login === "0pdd";
+
   if (!/^[A-Z]/.test(danger.github.pr.title)) {
     fail("Pull request title should start with capital letter.");
     return;
   }
 
-  if (!/^[A-Z]/.test(issueJSON.data.title)) {
-    // @todo #92 Exclude puzzles created by 0pdd bot from such check.
+  if (!isBotIssue && !/^[A-Z]/.test(issueJSON.data.title)) {
     fail("Issue title should start with capital letter.");
     return;
   }
