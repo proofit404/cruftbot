@@ -2,7 +2,7 @@ export default async (): undefined => {
   const pullRequestTest = danger.github.pr.body.match(/^#(\d+)$/);
 
   if (!pullRequestTest) {
-    fail("Pull request body SHOULD contain issue number.");
+    fail("Pull request body should contain issue number.");
     return;
   }
 
@@ -47,7 +47,10 @@ export default async (): undefined => {
 
   // @todo #92 Commit title SHOULD contain issue number.
 
-  // @todo #92 Pull request title SHOULD NOT contain issue number.
+  if (danger.github.pr.title.includes(`#${issueNumber}`)) {
+    fail("Pull request title should not contain issue number.");
+    return;
+  }
 
   // @todo #92 Multiline commit message should separate title with new line.
 
