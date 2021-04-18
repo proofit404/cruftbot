@@ -27,6 +27,6 @@ jobs:
       - run: ./scripts/check
       # @todo #44 Run test script.
       - run: ./scripts/review
-        # @todo #92 Run review script only for pull requests.
+        if: ${{ github.event_name == 'pull_request' }}
         env:
           GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_TOKEN }}
