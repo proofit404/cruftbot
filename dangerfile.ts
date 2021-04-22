@@ -1,5 +1,11 @@
 export default async (): undefined => {
-  // @todo #283 Exclude pull requests made by dependabot from checks.
+  const isBotPullRequest = danger.github.pr.user.login === "dependabot[bot]";
+
+  if (isBotPullRequest) {
+    message("Ignore review of automatic pull requests.");
+    return;
+  }
+
   const pullRequestTest = danger.github.pr.body.match(/^#(\d+)$/);
 
   if (!pullRequestTest) {
