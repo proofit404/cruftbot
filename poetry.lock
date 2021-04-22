@@ -468,7 +468,7 @@ Django = ">=2.0.1"
 
 [[package]]
 name = "django-node-assets"
-version = "0.9.8"
+version = "0.9.9"
 description = "The Django application that allows install and serve assets via Node.js package manager infrastructure."
 category = "main"
 optional = false
@@ -1682,7 +1682,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.4"
-content-hash = "b3096163eef52f8642ef57f686cba24cb02996766af8ae4cfe8455c780dcd9a0"
+content-hash = "abb2785658d9b4b23be66d5df2ad46cca9d56cdf86d411196bfda21fe41e06b4"
 
 [metadata.files]
 appdirs = [
@@ -1946,8 +1946,8 @@ django-model-utils = [
     {file = "django_model_utils-4.1.1-py3-none-any.whl", hash = "sha256:ef7c440024e797796a3811432abdd2be8b5225ae64ef346f8bfc6de7d8e5d73c"},
 ]
 django-node-assets = [
-    {file = "django-node-assets-0.9.8.tar.gz", hash = "sha256:da5955235edad425783ee5768c8c2eb41e7f89dda6a966b39e6e3e3bf50176c2"},
-    {file = "django_node_assets-0.9.8-py3-none-any.whl", hash = "sha256:012cae80cd8c9978ba8dbfb58def8096926556297961de46a72671cded0c8ed8"},
+    {file = "django-node-assets-0.9.9.tar.gz", hash = "sha256:fcbaac9b1d4fd86d72270d8ba5475f0b7412bc051d9cbdd7fe61e730114ac7ca"},
+    {file = "django_node_assets-0.9.9-py3-none-any.whl", hash = "sha256:697ba77d816e3c6fec1373d255ddc0a705c72cd474da3f962fb441b3998a72e3"},
 ]
 django-permissions-policy = [
     {file = "django-permissions-policy-4.0.0.tar.gz", hash = "sha256:fc468017e4a6d98f91695b40d6754fe592c2cd25b1ed97a602d12400093aa144"},
