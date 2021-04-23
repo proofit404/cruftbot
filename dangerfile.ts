@@ -62,7 +62,12 @@ export default async (): undefined => {
     }
   }
 
-  // @todo #92 Commit title SHOULD contain issue number.
+  for (const commit of danger.git.commits) {
+    if (!commit.message.split(/\r?\n/)[0].endsWith(` (#${issueNumber}).`)) {
+      fail("Commit title should contain issue number.");
+      return;
+    }
+  }
 
   if (danger.github.pr.title.includes(`#${issueNumber}`)) {
     fail("Pull request title should not contain issue number.");
