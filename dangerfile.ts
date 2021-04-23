@@ -38,7 +38,12 @@ export default async (): undefined => {
     return;
   }
 
-  // @todo #92 Commit message should start with capital letter.
+  for (const commit of danger.git.commits) {
+    if (!/^[A-Z]/.test(commit.message)) {
+      fail("Commit message should start with capital letter.");
+      return;
+    }
+  }
 
   if (!/\.$/.test(danger.github.pr.title)) {
     fail("Pull request title should ends with the dot.");
