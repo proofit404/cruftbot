@@ -55,7 +55,12 @@ export default async (): undefined => {
     return;
   }
 
-  // @todo #92 Commit message should ends with the dot.
+  for (const commit of danger.git.commits) {
+    if (!/\.$/.test(commit.message)) {
+      fail("Commit message should ends with the dot.");
+      return;
+    }
+  }
 
   // @todo #92 Commit title SHOULD contain issue number.
 
