@@ -69,12 +69,18 @@ export default async (): undefined => {
     }
   }
 
+  for (const commit of danger.git.commits) {
+    const commitLines = commit.message.split(/\r?\n/);
+    if (commitLines.length > 1 && commitLines[1] !== "") {
+      fail("Multiline commit message should separate title with new line.");
+      return;
+    }
+  }
+
   if (danger.github.pr.title.includes(`#${issueNumber}`)) {
     fail("Pull request title should not contain issue number.");
     return;
   }
-
-  // @todo #92 Multiline commit message should separate title with new line.
 
   if (danger.github.pr.labels.length > 0) {
     fail("Pull request should not have labels.");
