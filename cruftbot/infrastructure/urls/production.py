@@ -1,3 +1,4 @@
+"""HTTP request routing for production environment."""
 from cruftbot.infrastructure.urls import urlpatterns
 
 

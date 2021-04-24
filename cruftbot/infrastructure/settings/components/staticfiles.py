@@ -1,3 +1,4 @@
+"""Settings for staticfiles application."""
 from cruftbot.infrastructure.settings.components.base import INSTALLED_APPS
 
 

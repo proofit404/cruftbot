@@ -1,3 +1,4 @@
+"""Settings for axes application."""
 from cruftbot.infrastructure.settings.components.base import AUTHENTICATION_BACKENDS
 from cruftbot.infrastructure.settings.components.base import INSTALLED_APPS
 from cruftbot.infrastructure.settings.components.base import MIDDLEWARE

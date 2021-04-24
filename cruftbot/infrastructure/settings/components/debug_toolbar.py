@@ -1,3 +1,4 @@
+"""Settings for debug toolbar application."""
 from debug_toolbar.settings import PANELS_DEFAULTS
 
 from cruftbot.infrastructure.settings.components.base import INSTALLED_APPS
@@ -18,6 +19,7 @@ DEBUG_TOOLBAR_CONFIG = {
 
 
 def show_toolbar(request):
+    """Show debug toolbar no matter docker."""
     return True
 
 

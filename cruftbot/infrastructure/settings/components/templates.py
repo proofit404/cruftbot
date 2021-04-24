@@ -1,3 +1,4 @@
+"""Settings for templates application."""
 from django.templatetags.static import static
 from django.urls import reverse
 from jinja2.sandbox import SandboxedEnvironment
@@ -18,6 +19,7 @@ TEMPLATES = [
 
 
 def environment(**options):
+    """Create safe Jinja environment."""
     env = SandboxedEnvironment(**options)
     scope = {"static": static, "url": reverse}
     env.globals.update(scope)

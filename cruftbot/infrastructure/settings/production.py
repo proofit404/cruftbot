@@ -1,3 +1,4 @@
+"""Framework settings for production environment."""
 from cruftbot.infrastructure.settings.components.activity_stream import *
 from cruftbot.infrastructure.settings.components.axes import *
 from cruftbot.infrastructure.settings.components.base import *

@@ -1,3 +1,4 @@
+"""Settings for node assets application."""
 from cruftbot.infrastructure.settings.components.base import BASE_DIR
 from cruftbot.infrastructure.settings.components.base import INSTALLED_APPS
 from cruftbot.infrastructure.settings.components.staticfiles import STATICFILES_FINDERS

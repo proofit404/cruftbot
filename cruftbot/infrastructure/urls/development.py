@@ -1,3 +1,4 @@
+"""HTTP request routing for local development."""
 import debug_toolbar
 from django.contrib.staticfiles.views import serve
 from django.urls import include
@@ -13,3 +14,8 @@ development_patterns = [
 ]
 
 urlpatterns.extend(development_patterns)
+# @todo #251 Define own patterns variable. Include production urls
+#  in it without import. We need to address a very similar problem
+#  for settings files in #230 task. Production routing should be
+#  defined in the dedicated module. Move it from package dunder
+#  init module.

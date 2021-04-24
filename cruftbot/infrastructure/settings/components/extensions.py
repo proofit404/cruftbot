@@ -1,3 +1,4 @@
+"""Settings for extensions application."""
 from cruftbot.infrastructure.settings.components.base import INSTALLED_APPS
 
 
