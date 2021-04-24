@@ -1,3 +1,4 @@
+"""Settings for content security policy application."""
 from cruftbot.infrastructure.settings.components.base import MIDDLEWARE
 
 

@@ -16,5 +16,3 @@ per-file-ignores =
   cruftbot/infrastructure/settings/production.py: F401, F403
   cruftbot/infrastructure/settings/development.py: F401, F403
   # @todo #251 Story steps are allowed to omit docstrings.
-ignore = D100, D101, D103, D104, D401
-# @todo #251 Write docstrings for public packages, modules, and classes.

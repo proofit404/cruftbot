@@ -1,3 +1,4 @@
+"""Open API browser."""
 from drf_yasg.openapi import Contact
 from drf_yasg.openapi import Info
 from drf_yasg.openapi import License
