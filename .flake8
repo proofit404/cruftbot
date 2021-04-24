@@ -10,9 +10,9 @@ per-file-ignores =
   cruftbot/usecases/shapes/__init__.py: F401
   cruftbot/usecases/scopes/__init__.py: F401
   cruftbot/usecases/services/__init__.py: F401
+  cruftbot/usecases/services/*.py: D102
   # We need a way to split Django settings file into a set of smaller
   # components. For that reason we would allow star-import to be used
   # in all settings file we have.
   cruftbot/infrastructure/settings/production.py: F401, F403
   cruftbot/infrastructure/settings/development.py: F401, F403
-  # @todo #251 Story steps are allowed to omit docstrings.
