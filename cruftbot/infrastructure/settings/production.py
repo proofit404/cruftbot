@@ -5,6 +5,7 @@ from cruftbot.infrastructure.settings.components.base import *
 from cruftbot.infrastructure.settings.components.content_security_policy import *
 from cruftbot.infrastructure.settings.components.filters import *
 from cruftbot.infrastructure.settings.components.guardian import *
+from cruftbot.infrastructure.settings.components.health_check import *
 from cruftbot.infrastructure.settings.components.node_assets import *
 from cruftbot.infrastructure.settings.components.permissions_policy import *
 from cruftbot.infrastructure.settings.components.staticfiles import *
