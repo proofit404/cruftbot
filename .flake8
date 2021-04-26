@@ -4,12 +4,18 @@ eradicate-aggressive = True
 ban-relative-imports = True
 per-file-ignores =
   # These modules are interfaces.  They contains public classes and
-  # functions avalable from the outside.  No code is allowed to be
+  # functions available from the outside.  No code is allowed to be
   # imported from the nested modules.
   cruftbot/entities/__init__.py: F401
   cruftbot/usecases/shapes/__init__.py: F401
   cruftbot/usecases/scopes/__init__.py: F401
   cruftbot/usecases/services/__init__.py: F401
+  cruftbot/infrastructure/views/__init__.py: F401
+  # The purpose of story steps is to explain application business
+  # logic in terms of problem domain. Forcing documentation strings
+  # for those methods is not necessary in most cases. If you need a
+  # documentation for story step, it's a sign you need to split it
+  # into a nested story.
   cruftbot/usecases/services/*.py: D102
   # We need a way to split Django settings file into a set of smaller
   # components. For that reason we would allow star-import to be used

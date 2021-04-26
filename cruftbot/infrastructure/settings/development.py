@@ -8,6 +8,7 @@ from cruftbot.infrastructure.settings.components.debug_toolbar import *
 from cruftbot.infrastructure.settings.components.extensions import *
 from cruftbot.infrastructure.settings.components.extra_checks import *
 from cruftbot.infrastructure.settings.components.filters import *
+from cruftbot.infrastructure.settings.components.guardian import *
 from cruftbot.infrastructure.settings.components.migration_linter import *
 from cruftbot.infrastructure.settings.components.node_assets import *
 from cruftbot.infrastructure.settings.components.permissions_policy import *
