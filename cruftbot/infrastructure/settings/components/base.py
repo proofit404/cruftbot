@@ -1,4 +1,4 @@
-"""Settings for base application."""
+"""Base settings."""
 from pathlib import Path
 
 from environ import Env

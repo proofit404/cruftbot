@@ -6,7 +6,7 @@ from drf_yasg.views import get_schema_view
 from rest_framework.permissions import AllowAny
 
 
-schema_view = get_schema_view(
+schema = get_schema_view(
     Info(
         title="cruftbot",
         default_version="v1",
