@@ -6,12 +6,17 @@ set -o pipefail
 
 echo "==> Running check framework…"
 poetry run django-admin check --deploy --fail-level WARNING
+# @todo #200 Run checks with production settings module.
+#  This could require to move extra-checks application to the production requirement.
 
 echo "==> Running migration linter…"
 poetry run django-admin lintmigrations
+# @todo #200 Ignore third-party migrations in the migration linter. We trust library
+#  maintainers to do their job. If any incident will occur, we would solve it manually.
 
 echo "==> Running tests…"
 poetry run coverage run -m django test
+# @todo #200 Test index view.
 
 echo "==> Running coverage report…"
 poetry run coverage report --fail-under 100
