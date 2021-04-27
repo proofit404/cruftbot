@@ -398,17 +398,6 @@ python-versions = "*"
 django = ">=1.11"
 
 [[package]]
-name = "django-http-referrer-policy"
-version = "1.1.1"
-description = "django-http-referrer-policy provides a middleware class implementing the Referrer-Policy header for Django-powered sites."
-category = "main"
-optional = false
-python-versions = ">=3.5.0"
-
-[package.dependencies]
-Django = ">=1.11"
-
-[[package]]
 name = "django-ipware"
 version = "3.0.2"
 description = "A Django utility application that returns client's real IP address"
@@ -1621,7 +1610,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.4"
-content-hash = "b7d67ef4165f2ef41cbd4c6716ee418dd4cfc04aca9106cedb6369a05aae2af8"
+content-hash = "a9a869657811363a894536fc4c111a42d658329d93bf7c6044c7bf73113e7734"
 
 [metadata.files]
 appdirs = [
@@ -1860,10 +1849,6 @@ django-guardian = [
 django-health-check = [
     {file = "django-health-check-3.16.3.tar.gz", hash = "sha256:a6aa6ea423eae4fd0665f6372b826af1ed20dfc3e88cf52789d0b49cfb64969c"},
     {file = "django_health_check-3.16.3-py2.py3-none-any.whl", hash = "sha256:d0628ffc11aee7e62e73b58ff39179ea2a9ca5abfbc92cb345ceca268593dd71"},
-]
-django-http-referrer-policy = [
-    {file = "django-http-referrer-policy-1.1.1.tar.gz", hash = "sha256:917f5ed62054b27eff3172b7eccfb018469e85ddd538767328553282a70493c3"},
-    {file = "django_http_referrer_policy-1.1.1-py2.py3-none-any.whl", hash = "sha256:7617d1256f1ab80c1a12bffdd8c8d24b94093eb1e21d035e2aa6d7d3c5ac999e"},
 ]
 django-ipware = [
     {file = "django-ipware-3.0.2.tar.gz", hash = "sha256:c7df8e1410a8e5d6b1fbae58728402ea59950f043c3582e033e866f0f0cf5e94"},

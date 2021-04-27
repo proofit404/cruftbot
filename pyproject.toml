@@ -18,7 +18,6 @@ django-environ = "0.4.5"
 django-filter = "2.4.0"
 django-guardian = "2.3.0"
 django-health-check = "3.16.3"
-django-http-referrer-policy = "1.1.1"  # @todo #2 Setup django-http-referrer-policy package.
 django-model-utils = "4.1.1"
 django-node-assets = "0.9.9"
 django-permissions-policy = "4.0.0"
