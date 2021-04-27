@@ -23,7 +23,6 @@ django-model-utils = "4.1.1"
 django-node-assets = "0.9.9"
 django-permissions-policy = "4.0.0"
 django-reversion = "3.0.9"  # @todo #2 Setup django-reversion package.
-django-silk = "4.1.0"  # @todo #2 Setup django-silk package.
 djangorestframework = "3.12.4"
 drf-yasg = "1.20.0"
 generics = "3.3.1"
