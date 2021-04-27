@@ -8,6 +8,7 @@ from cruftbot.infrastructure.settings.components.guardian import *
 from cruftbot.infrastructure.settings.components.health_check import *
 from cruftbot.infrastructure.settings.components.node_assets import *
 from cruftbot.infrastructure.settings.components.permissions_policy import *
+from cruftbot.infrastructure.settings.components.reversion import *
 from cruftbot.infrastructure.settings.components.staticfiles import *
 from cruftbot.infrastructure.settings.components.templates import *
 
