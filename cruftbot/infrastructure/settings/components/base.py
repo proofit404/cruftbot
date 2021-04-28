@@ -24,12 +24,10 @@ INSTALLED_APPS = [
     "allauth.socialaccount",
     "allauth.socialaccount.providers.github",
     "allauth.socialaccount.providers.gitlab",
-    "corsheaders",
     "cruftbot.infrastructure.apps.CruftbotConfig",
 ]
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -61,8 +59,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SOCIALACCOUNT_PROVIDERS = {}
-
-CORS_ALLOWED_ORIGINS = ["https://cruftbot.io"]
 
 LANGUAGE_CODE = "en-us"
 
