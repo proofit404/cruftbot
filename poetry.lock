@@ -1263,7 +1263,7 @@ python-versions = "*"
 
 [[package]]
 name = "pyupgrade"
-version = "2.11.0"
+version = "2.14.0"
 description = "A tool to automatically upgrade syntax for newer versions."
 category = "dev"
 optional = false
@@ -1601,7 +1601,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.4"
-content-hash = "d49fbf83dcd5f021fe86d9c668e9ee9bfe65ad2b1a00a2a8596d7eea0f4d6c5c"
+content-hash = "988f8216e9ce146d066f9f05e0f43012c9661fdb8e8af7d6122f23630e78d7c8"
 
 [metadata.files]
 appdirs = [
@@ -2251,8 +2251,8 @@ pytz = [
     {file = "pytz-2021.1.tar.gz", hash = "sha256:83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"},
 ]
 pyupgrade = [
-    {file = "pyupgrade-2.11.0-py2.py3-none-any.whl", hash = "sha256:47cd92db1675a9043bebbe0b67a103b66527883b35e22634060a6bcb99138baa"},
-    {file = "pyupgrade-2.11.0.tar.gz", hash = "sha256:5dcae14b1c9b7ecce5ec42210528eb30a1a2408613da744f2ba4a9b54b344cf6"},
+    {file = "pyupgrade-2.14.0-py2.py3-none-any.whl", hash = "sha256:19bd23babd4c09171be66d393d83a53e5ae8d54c6534001c4b7ad92c4d560d69"},
+    {file = "pyupgrade-2.14.0.tar.gz", hash = "sha256:34f5dfa57d8007f6cd455a0a423e06e96753b07e4711bac63e3d5c4f3af97cea"},
 ]
 pyyaml = [
     {file = "PyYAML-5.4.1-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:3b2b1824fe7112845700f815ff6a489360226a5609b96ec2190a45e62a9fc922"},
