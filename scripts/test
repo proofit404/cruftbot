@@ -11,8 +11,6 @@ poetry run django-admin check --deploy --fail-level WARNING
 
 echo "==> Running migration linter…"
 poetry run django-admin lintmigrations
-# @todo #200 Ignore third-party migrations in the migration linter. We trust library
-#  maintainers to do their job. If any incident will occur, we would solve it manually.
 
 echo "==> Running tests…"
 poetry run coverage run -m django test
