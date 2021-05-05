@@ -13,8 +13,7 @@ echo "==> Running migration linter…"
 poetry run django-admin lintmigrations
 
 echo "==> Running tests…"
-poetry run coverage run -m django test
-# @todo #200 Test index view.
+poetry run coverage run -m django test tests/
 
 echo "==> Running coverage report…"
 poetry run coverage report --fail-under 100
