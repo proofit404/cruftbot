@@ -5,9 +5,42 @@ set -o nounset
 set -o pipefail
 
 echo "==> Running check framework…"
-poetry run django-admin check --deploy --fail-level WARNING
-# @todo #200 Run checks with production settings module.
-#  This could require to move extra-checks application to the production requirement.
+DJANGO_SETTINGS_MODULE=cruftbot.infrastructure.settings.production poetry run django-admin check --deploy --fail-level WARNING
+
+# @todo #311 Check framework failure: You have not set a value for the
+#  SECURE_HSTS_SECONDS setting. If your entire site is served only over
+#  SSL, you may want to consider setting a value and enabling HTTP
+#  Strict Transport Security. Be sure to read the documentation first;
+#  enabling HSTS carelessly can cause serious, irreversible problems.
+
+# @todo #311 Check framework failure: Your SECURE_SSL_REDIRECT setting
+#  is not set to True. Unless your site should be available over both
+#  SSL and non-SSL connections, you may want to either set this setting
+#  True or configure a load balancer or reverse-proxy server to
+#  redirect all connections to HTTPS.
+
+# @todo #311 Check framework failure: Your SECRET_KEY has less than 50
+#  characters, less than 5 unique characters, or it's prefixed with
+#  'django-insecure-' indicating that it was generated automatically by
+#  Django. Please generate a long and random SECRET_KEY, otherwise many
+#  of Django's security-critical features will be vulnerable to attack.
+
+# @todo #311 Check framework failure: SESSION_COOKIE_SECURE is not set
+#  to True. Using a secure-only session cookie makes it more difficult
+#  for network traffic sniffers to hijack user sessions.
+
+# @todo #311 Check framework failure: You have
+#  'django.middleware.csrf.CsrfViewMiddleware' in your MIDDLEWARE, but
+#  you have not set CSRF_COOKIE_SECURE to True. Using a secure-only
+#  CSRF cookie makes it more difficult for network traffic sniffers to
+#  steal the CSRF token.
+
+# @todo #311 Check framework failure: ALLOWED_HOSTS must not be empty
+#  in deployment.
+
+# @todo #311 Check framework failure: Auto-created primary key used
+#  when not defining a primary key type, by default
+#  'django.db.models.AutoField'.
 
 echo "==> Running migration linter…"
 poetry run django-admin lintmigrations

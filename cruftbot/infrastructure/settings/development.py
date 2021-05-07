@@ -4,7 +4,6 @@ from cruftbot.infrastructure.settings.components.cross_origin_resource_sharing i
 )
 from cruftbot.infrastructure.settings.components.debug_toolbar import *
 from cruftbot.infrastructure.settings.components.extensions import *
-from cruftbot.infrastructure.settings.components.extra_checks import *
 from cruftbot.infrastructure.settings.components.migration_linter import *
 from cruftbot.infrastructure.settings.components.querycount import *
 from cruftbot.infrastructure.settings.components.test_migrations import *
