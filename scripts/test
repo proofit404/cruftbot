@@ -7,12 +7,6 @@ set -o pipefail
 echo "==> Running check framework…"
 DJANGO_SETTINGS_MODULE=cruftbot.infrastructure.settings.production poetry run django-admin check --deploy --fail-level WARNING
 
-# @todo #311 Check framework failure: You have
-#  'django.middleware.csrf.CsrfViewMiddleware' in your MIDDLEWARE, but
-#  you have not set CSRF_COOKIE_SECURE to True. Using a secure-only
-#  CSRF cookie makes it more difficult for network traffic sniffers to
-#  steal the CSRF token.
-
 # @todo #311 Check framework failure: ALLOWED_HOSTS must not be empty
 #  in deployment.
 
