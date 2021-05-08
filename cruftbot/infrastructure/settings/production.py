@@ -13,6 +13,7 @@ from cruftbot.infrastructure.settings.components.node_assets import *
 from cruftbot.infrastructure.settings.components.permissions_policy import *
 from cruftbot.infrastructure.settings.components.reversion import *
 from cruftbot.infrastructure.settings.components.security import *
+from cruftbot.infrastructure.settings.components.session import *
 from cruftbot.infrastructure.settings.components.staticfiles import *
 from cruftbot.infrastructure.settings.components.templates import *
 
