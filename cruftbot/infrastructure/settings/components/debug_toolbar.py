@@ -3,6 +3,7 @@ from debug_toolbar.settings import PANELS_DEFAULTS
 
 from cruftbot.infrastructure.settings.components.base import INSTALLED_APPS
 from cruftbot.infrastructure.settings.components.base import MIDDLEWARE
+from cruftbot.infrastructure.settings.components.templates import TEMPLATES
 
 
 INSTALLED_APPS.append("debug_toolbar")
@@ -23,5 +24,9 @@ def show_toolbar(request):
     return True
 
 
-# @todo #190 Debug toolbar does not work without django template engine enabled.
-#  We have Jinja2 engine enabled only.
+TEMPLATES.append(
+    {"BACKEND": "django.template.backends.django.DjangoTemplates", "APP_DIRS": True}
+)
+# @todo #205 Remove debug toolbar templates workaround. After we
+#  fix template render in the toolbar application upstream, we
+#  should remove Django templates engine from list.
