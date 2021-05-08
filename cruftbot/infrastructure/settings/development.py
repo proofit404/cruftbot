@@ -1,4 +1,5 @@
 """Framework settings for local development."""
+from cruftbot.infrastructure.settings.components.allowed_hosts import ALLOWED_HOSTS
 from cruftbot.infrastructure.settings.components.cross_origin_resource_sharing import (
     CORS_ALLOWED_ORIGINS,
 )
@@ -13,6 +14,10 @@ from cruftbot.infrastructure.settings.production import *
 DEBUG = True
 
 ROOT_URLCONF = "cruftbot.infrastructure.urls.development"
+
+DEVELOPMENT_HOSTS = ["localhost", "0.0.0.0", "testserver"]  # nosec
+
+ALLOWED_HOSTS.extend(DEVELOPMENT_HOSTS)
 
 DEVELOPMENT_ORIGINS = ["http://localhost:8000", "http://0.0.0.0:8000"]
 

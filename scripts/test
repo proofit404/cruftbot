@@ -7,9 +7,6 @@ set -o pipefail
 echo "==> Running check framework…"
 DJANGO_SETTINGS_MODULE=cruftbot.infrastructure.settings.production poetry run django-admin check --deploy --fail-level WARNING
 
-# @todo #311 Check framework failure: ALLOWED_HOSTS must not be empty
-#  in deployment.
-
 echo "==> Running migration linter…"
 poetry run django-admin lintmigrations
 
