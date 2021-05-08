@@ -19,12 +19,6 @@ DJANGO_SETTINGS_MODULE=cruftbot.infrastructure.settings.production poetry run dj
 #  True or configure a load balancer or reverse-proxy server to
 #  redirect all connections to HTTPS.
 
-# @todo #311 Check framework failure: Your SECRET_KEY has less than 50
-#  characters, less than 5 unique characters, or it's prefixed with
-#  'django-insecure-' indicating that it was generated automatically by
-#  Django. Please generate a long and random SECRET_KEY, otherwise many
-#  of Django's security-critical features will be vulnerable to attack.
-
 # @todo #311 Check framework failure: SESSION_COOKIE_SECURE is not set
 #  to True. Using a secure-only session cookie makes it more difficult
 #  for network traffic sniffers to hijack user sessions.
