@@ -22,7 +22,7 @@ services:
       - PYTHONPATH=/app/
       - PYTHONUNBUFFERED=1
       - CRUFTBOT_SITE_ID=1
-      - CRUFTBOT_SECRET_KEY=9ee0544eeb9a41b5917eeb23b2d37e2abaf13eaf8fc
+      - CRUFTBOT_SECRET_KEY=52f0f84e0e004ad1b85a20d44803058096d76c22b0df4763a347ef7f38761e738b94320c0dff4a24a3ad9b817e0a87d9
       - CRUFTBOT_DATABASE_URL=psql://cruftbot:cruftbot@db:5432/cruftbot
   db:
     image: postgres
