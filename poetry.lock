@@ -1613,8 +1613,8 @@ pyyaml = "*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "3.9.4"
-content-hash = "6dc2d139e402b3cfb9d6e732285367315715aa2c0ea8dab5a87c0841434ab862"
+python-versions = "3.9.5"
+content-hash = "b1f3864e01a1a65d732ce5c9c5aef0ac5247007ce65dfd324694937638b088f7"
 
 [metadata.files]
 appdirs = [

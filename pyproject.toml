@@ -28,7 +28,7 @@ drf-yasg = "1.20.0"
 generics = "3.3.1"
 marshmallow = "3.11.1"
 psycopg2-binary = "2.8.6"
-python = "3.9.4"
+python = "3.9.5"
 stories = "4.0.0"
 stories-marshmallow = "0.2.0"
 
