@@ -39,8 +39,6 @@ WSGI_APPLICATION = "cruftbot.infrastructure.wsgi.application"
 
 SITE_ID = env.int("CRUFTBOT_SITE_ID")
 
-DATABASES = {"default": env.db("CRUFTBOT_DATABASE_URL")}
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": (
