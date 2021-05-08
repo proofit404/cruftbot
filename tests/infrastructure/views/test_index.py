@@ -7,5 +7,5 @@ class IndexViewTestCase(TestCase):
 
     def test_index_view(self):
         """Open index page."""
-        response = self.client.get("/")
+        response = self.client.get("/", follow=True)
         assert response.status_code == 200
