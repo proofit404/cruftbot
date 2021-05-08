@@ -5,6 +5,6 @@ from cruftbot.infrastructure.settings.components.base import MIDDLEWARE
 
 INSTALLED_APPS.append("django.contrib.sessions")
 
-MIDDLEWARE.append("django.contrib.sessions.middleware.SessionMiddleware")
+MIDDLEWARE.insert(0, "django.contrib.sessions.middleware.SessionMiddleware")
 
 SESSION_COOKIE_SECURE = True
