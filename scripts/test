@@ -32,10 +32,6 @@ DJANGO_SETTINGS_MODULE=cruftbot.infrastructure.settings.production poetry run dj
 # @todo #311 Check framework failure: ALLOWED_HOSTS must not be empty
 #  in deployment.
 
-# @todo #311 Check framework failure: Auto-created primary key used
-#  when not defining a primary key type, by default
-#  'django.db.models.AutoField'.
-
 echo "==> Running migration linter…"
 poetry run django-admin lintmigrations
 
