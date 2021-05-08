@@ -4,6 +4,7 @@ from cruftbot.infrastructure.settings.components.axes import *
 from cruftbot.infrastructure.settings.components.base import *
 from cruftbot.infrastructure.settings.components.content_security_policy import *
 from cruftbot.infrastructure.settings.components.cross_origin_resource_sharing import *
+from cruftbot.infrastructure.settings.components.cross_site_request_forgery import *
 from cruftbot.infrastructure.settings.components.databases import *
 from cruftbot.infrastructure.settings.components.extra_checks import *
 from cruftbot.infrastructure.settings.components.filters import *
